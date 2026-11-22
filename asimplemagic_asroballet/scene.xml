@@ -1,4 +1,10 @@
 <mujoco model="asRoBallet_scene">
   <include file="asRoBallet_floating_ball.xml"/>
   <include file="common/environment.xml"/>
+  <keyframe>
+    <!-- Upright base, with the elbows and their position targets set to the arms-down controller pose. -->
+    <key name="upright"
+      qpos="0 0 0.1111 1 0 0 0 0 0 0 0 0 1.5707963267948966 0 0 0 1.5707963267948966 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -0.000184 0 0.1138 1 -1.0122912372383796e-31 7.4431909205178262e-17 -1.3600232051658211e-15"
+      ctrl="0 0 0 0 0 0 0 0 1.5707963267948966 0 0 0 1.5707963267948966"/>
+  </keyframe>
 </mujoco>

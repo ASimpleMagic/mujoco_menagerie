@@ -21,6 +21,7 @@ Built by the Google DeepMind team with contributions from the open-source commun
 - [Andreas Kuhner](https://github.com/AndreasKuhner)
 - [Andrew Luo](https://github.com/Andrew-Luo1)
 - [Ayzaan Wahid](https://github.com/ayzaan)
+- [Chaoyang Song](https://github.com/ancorasir)
 - [Chenhui Zuo](https://github.com/zchJo)
 - [Chi-Tao Kuan](https://github.com/ctkuan-flexiv)
 - [Chintan Desai](https://github.com/hello-chintan)

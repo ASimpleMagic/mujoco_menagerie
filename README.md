@@ -190,6 +190,7 @@ full breakdown.
 
 | Preview | Name | DoFs | License |
 |:---:|---|---|---|
+| <a href='https://live.mujoco.org/?model=github:ASimpleMagic/mujoco_menagerie/research/asimplemagic_asroballet/scene.xml' title='Open live preview for asRoBallet'><img src='assets/asimplemagic_asroballet-asRoBallet_floating_ball.png' width=120></a> | asRoBallet | 49 | [MIT](asimplemagic_asroballet/LICENSE) |
 | <a href='https://live.mujoco.org/?model=github:google-deepmind/mujoco_menagerie/main/unitree_h1/scene.xml' title='Open live preview for Unitree H1'><img src='assets/unitree_h1-h1.png' width=120></a> | Unitree H1 | 19 | [BSD-3-Clause](unitree_h1/LICENSE) |
 | <a href='https://live.mujoco.org/?model=github:google-deepmind/mujoco_menagerie/main/robotis_op3/scene.xml' title='Open live preview for Robotis OP3'><img src='assets/robotis_op3-op3.png' width=120></a> | Robotis OP3 | 20 | [Apache-2.0](robotis_op3/LICENSE) |
 | <a href='https://live.mujoco.org/?model=github:google-deepmind/mujoco_menagerie/main/unitree_g1/scene.xml' title='Open live preview for Unitree G1'><img src='assets/unitree_g1-g1.png' width=120></a> | Unitree G1 | 29 | [BSD-3-Clause](unitree_g1/LICENSE) |

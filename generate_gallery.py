@@ -97,13 +97,15 @@ KEEP_LIGHT = ['go1', 'a1', 'op3', 'aloha', 'left_hand', 'stretch', 'piper']
 # paths, just without the host).
 LIVE_REPO = 'google-deepmind/mujoco_menagerie'
 LIVE_REF = 'main'
+LIVE_MODEL_REFS = {
+  'asimplemagic_asroballet': 'ASimpleMagic/mujoco_menagerie/research',
+}
 
 
 def live_url(xml_path):
-  return (
-    f'https://live.mujoco.org/?model='
-    f'github:{LIVE_REPO}/{LIVE_REF}/{xml_path}'
-  )
+  maker = xml_path.split('/', 1)[0]
+  repo_ref = LIVE_MODEL_REFS.get(maker, f'{LIVE_REPO}/{LIVE_REF}')
+  return f'https://live.mujoco.org/?model=github:{repo_ref}/{xml_path}'
 
 
 def _parse_floats(s):
