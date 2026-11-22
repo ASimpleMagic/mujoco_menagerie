@@ -133,6 +133,7 @@ MODEL_MAP = {
   'berkeley_humanoid/berkeley_humanoid': ModelType.HUMANOID,
   'fourier_n1/n1': ModelType.HUMANOID,
   'toddlerbot_2xm/toddlerbot_2xm': ModelType.HUMANOID,
+  'asroballet/asRoBallet_floating_ball': ModelType.HUMANOID,
   'iit_softfoot/softfoot': ModelType.BIOMECHANICAL,
   'ms_human_700/MS-Human-700': ModelType.BIOMECHANICAL,
   'seeed_rebot_devarm/seeed_rebot_devarm': ModelType.ARM,

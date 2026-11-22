@@ -194,6 +194,7 @@ full breakdown.
 | <a href='https://live.mujoco.org/?model=github:google-deepmind/mujoco_menagerie/main/berkeley_humanoid/scene.xml' title='Open live preview for Berkeley Humanoid'><img src='assets/berkeley_humanoid-berkeley_humanoid.png' width=120></a> | Berkeley Humanoid | 12 | [BSD-3-Clause](berkeley_humanoid/LICENSE) |
 | <a href='https://live.mujoco.org/?model=github:google-deepmind/mujoco_menagerie/main/fourier_n1/scene.xml' title='Open live preview for Fourier N1'><img src='assets/fourier_n1-n1.png' width=120></a> | Fourier N1 | 23 | [Apache-2.0](fourier_n1/LICENSE) |
 | <a href='https://live.mujoco.org/?model=github:google-deepmind/mujoco_menagerie/main/toddlerbot_2xm/scene.xml' title='Open live preview for ToddlerBot 2XM'><img src='assets/toddlerbot_2xm-toddlerbot_2xm.png' width=120></a> | ToddlerBot 2XM | 44 | [MIT](toddlerbot_2xm/LICENSE) |
+| <a href='https://live.mujoco.org/?model=github:google-deepmind/mujoco_menagerie/main/asroballet/scene.xml' title='Open live preview for asRoBallet'><img src='assets/asroballet-asRoBallet_floating_ball.png' width=120></a> | asRoBallet | 49 | [MIT](asroballet/LICENSE) |
 
 **Quadrupeds.**
 
