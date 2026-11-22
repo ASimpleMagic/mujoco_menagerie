@@ -1,5 +1,12 @@
 # asOverDog changelog
 
+## 2026-11-23
+
+- Listed Bennett, Planar, and Spherical separately in the Quadrupeds gallery,
+  with each variant's own preview scene.
+- Documented running all three published gait policies in ASimpleMagic Studio
+  after MuJoCo 4.0.1 validation.
+
 ## 2026-11-22
 
 - Converted the Bennett, Planar, and Spherical USD models from asOverDog Newton

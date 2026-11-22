@@ -108,6 +108,8 @@ MODEL_MAP = {
   'unitree_go2/go2': ModelType.QUADRUPED,
   'boston_dynamics_spot/spot_arm': ModelType.QUADRUPED,
   'asoverdog/asoverdog_bennett': ModelType.QUADRUPED,
+  'asoverdog/asoverdog_planar': ModelType.QUADRUPED,
+  'asoverdog/asoverdog_spherical': ModelType.QUADRUPED,
   'shadow_dexee/shadow_dexee': ModelType.END_EFFECTOR,
   'pal_talos/talos': ModelType.HUMANOID,
   'leap_hand/left_hand': ModelType.END_EFFECTOR,
@@ -154,6 +156,8 @@ MODEL_MAP = {
 # file doesn't exist or wraps the wrong model (e.g., panda/scene.xml loads
 # the full arm; for the standalone gripper we want hand.xml directly).
 PREVIEW_OVERRIDES = {
+  'asoverdog/asoverdog_planar': 'asoverdog/scene_planar.xml',
+  'asoverdog/asoverdog_spherical': 'asoverdog/scene_spherical.xml',
   'franka_emika_panda/hand': 'franka_emika_panda/hand.xml',
   'ufactory_xarm7/hand': 'ufactory_xarm7/hand.xml',
   'leap_hand/left_hand': 'leap_hand/scene_left.xml',

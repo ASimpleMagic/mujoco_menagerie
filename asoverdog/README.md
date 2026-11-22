@@ -29,8 +29,20 @@ follow their source profiles with self-collisions disabled. MuJoCo uses the
 convex hulls of the Spherical variant's collision meshes.
 
 The included position servos support interactive testing and small joint
-commands. The published Newton gait policies use a separate observation and
-learned-actuator pipeline that would need a MuJoCo adapter.
+commands.
+
+## Published gaits in Studio
+
+Choose **Open asOverDog**, select a scene under **Entry model**, and click
+**Apply**. **Run policy** starts the matching Bennett, Planar, or Spherical
+gait from its `home` pose. **Set velocity** updates the body-frame command
+during playback. A zero command stands. **Controller source** opens the
+per-scene settings in `controller.json`. [ASimpleMagic Studio](https://asimplemagic.com/)
+
+The gait project uses these scenes with direct torque actuators. Each
+published ONNX gait runs at 50 Hz and the shared learned Robstride actuator
+at 400 Hz. All three policies passed standing, forward, lateral, and turn
+trials in MuJoCo 4.0.1.
 
 ## Validation
 

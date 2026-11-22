@@ -103,7 +103,17 @@ LIVE_MODEL_REFS = {
 }
 
 # The revolute loop constraints remove eight of the twenty tree coordinates.
-DOF_OVERRIDES = {'asoverdog/asoverdog_bennett': 12}
+DOF_OVERRIDES = {
+  'asoverdog/asoverdog_bennett': 12,
+  'asoverdog/asoverdog_planar': 12,
+  'asoverdog/asoverdog_spherical': 12,
+}
+
+GALLERY_NAMES = {
+  'asoverdog/asoverdog_bennett': 'asOverDog Bennett',
+  'asoverdog/asoverdog_planar': 'asOverDog Planar',
+  'asoverdog/asoverdog_spherical': 'asOverDog Spherical',
+}
 
 
 def live_url(xml_path):
@@ -263,7 +273,7 @@ MODELS_END = '<!-- END MODELS -->'
 
 def _row(robot, png_path, xml_path, nu):
   maker = robot.split('/')[0]
-  name = display_name(robot)
+  name = GALLERY_NAMES.get(robot) or display_name(robot)
   license_path = f'{maker}/LICENSE'
   license_name = (
     detect_license(license_path)

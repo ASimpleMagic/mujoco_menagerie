@@ -208,7 +208,9 @@ full breakdown.
 | <a href='https://live.mujoco.org/?model=github:google-deepmind/mujoco_menagerie/main/google_barkour_vb/scene.xml' title='Open live preview for Google Barkour vB'><img src='assets/google_barkour_vb-barkour_vb.png' width=120></a> | Google Barkour vB | 12 | [Apache-2.0](google_barkour_vb/LICENSE) |
 | <a href='https://live.mujoco.org/?model=github:google-deepmind/mujoco_menagerie/main/unitree_go2/scene.xml' title='Open live preview for Unitree Go2'><img src='assets/unitree_go2-go2.png' width=120></a> | Unitree Go2 | 12 | [BSD-3-Clause](unitree_go2/LICENSE) |
 | <a href='https://live.mujoco.org/?model=github:google-deepmind/mujoco_menagerie/main/boston_dynamics_spot/scene.xml' title='Open live preview for Boston Dynamics Spot'><img src='assets/boston_dynamics_spot-spot_arm.png' width=120></a> | Boston Dynamics Spot | 19 | [BSD-3-Clause](boston_dynamics_spot/LICENSE) |
-| <a href='https://live.mujoco.org/?model=github:ASimpleMagic/mujoco_menagerie/main/asoverdog/scene.xml' title='Open live preview for asOverDog'><img src='assets/asoverdog-asoverdog_bennett.png' width=120></a> | asOverDog | 12 | [Apache-2.0](asoverdog/LICENSE) |
+| <a href='https://live.mujoco.org/?model=github:ASimpleMagic/mujoco_menagerie/main/asoverdog/scene.xml' title='Open live preview for asOverDog Bennett'><img src='assets/asoverdog-asoverdog_bennett.png' width=120></a> | asOverDog Bennett | 12 | [Apache-2.0](asoverdog/LICENSE) |
+| <a href='https://live.mujoco.org/?model=github:ASimpleMagic/mujoco_menagerie/main/asoverdog/scene_planar.xml' title='Open live preview for asOverDog Planar'><img src='assets/asoverdog-asoverdog_planar.png' width=120></a> | asOverDog Planar | 12 | [Apache-2.0](asoverdog/LICENSE) |
+| <a href='https://live.mujoco.org/?model=github:ASimpleMagic/mujoco_menagerie/main/asoverdog/scene_spherical.xml' title='Open live preview for asOverDog Spherical'><img src='assets/asoverdog-asoverdog_spherical.png' width=120></a> | asOverDog Spherical | 12 | [Apache-2.0](asoverdog/LICENSE) |
 
 **Bipeds.**
 
