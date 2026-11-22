@@ -27,6 +27,7 @@ powerful simulator like MuJoCo with many modeling options, it is easy to create
 provide the community with a curated library of well-designed models that work
 well right out of the gate.
 
+- [ASimpleMagic research models](#asimplemagic-research-models)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Overview](#overview)
@@ -39,6 +40,12 @@ well right out of the gate.
 - [Acknowledgments](#acknowledgments)
 - [Changelog](#changelog)
 - [License and Disclaimer](#license-and-disclaimer)
+
+## ASimpleMagic research models
+
+| Model | Default scene | Alternate scene | License |
+| --- | --- | --- | --- |
+| [asRoBallet](asimplemagic_asroballet/) | [Floating ball](asimplemagic_asroballet/scene.xml) | [Spherical joint](asimplemagic_asroballet/scene_ball_joint.xml) | [MIT](asimplemagic_asroballet/LICENSE) |
 
 ## Getting Started
 
