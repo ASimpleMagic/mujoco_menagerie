@@ -1,0 +1,6 @@
+<mujoco model="asoverdog_bennett_scene">
+  <include file="asoverdog_bennett.xml"/>
+  <option timestep="0.0025" integrator="implicitfast" cone="elliptic"/>
+  <statistic center="0 0 0.22" extent="0.65"/>
+  <include file="common/environment.xml"/>
+</mujoco>

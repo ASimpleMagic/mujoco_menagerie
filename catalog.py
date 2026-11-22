@@ -107,6 +107,7 @@ MODEL_MAP = {
   'google_barkour_vb/barkour_vb': ModelType.QUADRUPED,
   'unitree_go2/go2': ModelType.QUADRUPED,
   'boston_dynamics_spot/spot_arm': ModelType.QUADRUPED,
+  'asoverdog/asoverdog_bennett': ModelType.QUADRUPED,
   'shadow_dexee/shadow_dexee': ModelType.END_EFFECTOR,
   'pal_talos/talos': ModelType.HUMANOID,
   'leap_hand/left_hand': ModelType.END_EFFECTOR,

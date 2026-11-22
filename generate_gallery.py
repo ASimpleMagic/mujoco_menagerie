@@ -99,7 +99,11 @@ LIVE_REPO = 'google-deepmind/mujoco_menagerie'
 LIVE_REF = 'main'
 LIVE_MODEL_REFS = {
   'asroballet': 'ASimpleMagic/mujoco_menagerie/main',
+  'asoverdog': 'ASimpleMagic/mujoco_menagerie/main',
 }
+
+# The revolute loop constraints remove eight of the twenty tree coordinates.
+DOF_OVERRIDES = {'asoverdog/asoverdog_bennett': 12}
 
 
 def live_url(xml_path):
@@ -374,7 +378,7 @@ def main(argv):
 
       model = spec.compile()
       n_freejoints = int((model.jnt_type == mujoco.mjtJoint.mjJNT_FREE).sum())
-      dofs[robot] = int(model.nq) - 7 * n_freejoints
+      dofs[robot] = DOF_OVERRIDES.get(robot, int(model.nq) - 7 * n_freejoints)
       data = mujoco.MjData(model)
       if gallery_key_name is not None:
         key_id = mujoco.mj_name2id(

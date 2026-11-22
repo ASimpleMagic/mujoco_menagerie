@@ -1,0 +1,16 @@
+<mujocoinclude>
+  <visual>
+    <headlight ambient="0.35 0.35 0.35" diffuse="0.7 0.7 0.7" specular="0.25 0.25 0.25"/>
+    <global azimuth="135" elevation="-20"/>
+  </visual>
+  <asset>
+    <texture name="asoverdog_grid" type="2d" builtin="checker" width="256" height="256" rgb1="0.28 0.31 0.33"
+      rgb2="0.35 0.38 0.40"/>
+    <material name="asoverdog_floor" texture="asoverdog_grid" texrepeat="4 4" texuniform="true" roughness="0.85"/>
+  </asset>
+  <worldbody>
+    <light name="asoverdog_key_light" pos="0.5 -0.8 1.6" dir="-0.3 0.5 -1" directional="true"/>
+    <geom name="floor" type="plane" size="0 0 0.05" material="asoverdog_floor" priority="1"
+      friction="0.6 0.005 0.0001"/>
+  </worldbody>
+</mujocoinclude>

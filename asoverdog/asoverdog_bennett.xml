@@ -1,0 +1,462 @@
+<mujoco model="asoverdog_bennett">
+  <!-- Converted from the Apache-2.0 asOverDog Newton USD assets. -->
+  <compiler angle="radian" meshdir="assets"/>
+  <default>
+    <default class="asoverdog_visual">
+      <geom group="2" contype="0" conaffinity="0" density="0"/>
+    </default>
+    <default class="asoverdog_collision">
+      <geom group="3" contype="2" conaffinity="1" density="0" friction="0.6 0.005 0.0001" rgba="0.35 0.5 0.6 1"/>
+    </default>
+  </default>
+  <asset>
+    <material name="asoverdog_gunmetal" rgba="0.02500000037 0.02999999933 0.03500000015 1" metallic="0.349999994"
+      roughness="0.400000006"/>
+    <material name="asoverdog_metal" rgba="0.3199999928 0.3400000036 0.3600000143 1" metallic="0.8000000119"
+      roughness="0.3000000119"/>
+    <mesh name="bennett_MainBody_visuals_MainBody_visual" file="bennett_MainBody_visuals_MainBody_visual.stl"
+      scale="1 1 1"/>
+    <mesh name="bennett_MotorThigh_FL_visuals_MotorThigh_FL_visual"
+      file="bennett_MotorThigh_FL_visuals_MotorThigh_FL_visual.stl" scale="1 1 1"/>
+    <mesh name="bennett_ThighReal_B_FL_visuals_ThighReal_B_FL_motor_visual"
+      file="bennett_ThighReal_B_FL_visuals_ThighReal_B_FL_motor_visual.stl" scale="1 1 1"/>
+    <mesh name="bennett_ThighReal_B_FL_visuals_ThighReal_B_FL_link_visual"
+      file="bennett_ThighReal_B_FL_visuals_ThighReal_B_FL_link_visual.stl" scale="1 1 1"/>
+    <mesh name="bennett_CalfReal_B_FL_visuals_CalfReal_B_FL_visual"
+      file="bennett_CalfReal_B_FL_visuals_CalfReal_B_FL_visual.stl" scale="1 1 1"/>
+    <mesh name="bennett_FootTip_FL_visuals_FootTip_FL_visual" file="bennett_FootTip_FL_visuals_FootTip_FL_visual.stl"
+      scale="1 1 1"/>
+    <mesh name="bennett_CalfOppo_B_FL_visuals_CalfOppo_B_FL_visual"
+      file="bennett_CalfOppo_B_FL_visuals_CalfOppo_B_FL_visual.stl" scale="1 1 1"/>
+    <mesh name="bennett_ThighOppo_B_FL_visuals_ThighOppo_B_FL_visual"
+      file="bennett_ThighOppo_B_FL_visuals_ThighOppo_B_FL_visual.stl" scale="1 1 1"/>
+    <mesh name="bennett_MotorThigh_FR_visuals_MotorThigh_FR_visual"
+      file="bennett_MotorThigh_FR_visuals_MotorThigh_FR_visual.stl" scale="1 1 1"/>
+    <mesh name="bennett_ThighReal_B_FR_visuals_ThighReal_B_FR_motor_visual"
+      file="bennett_ThighReal_B_FR_visuals_ThighReal_B_FR_motor_visual.stl" scale="1 1 1"/>
+    <mesh name="bennett_ThighReal_B_FR_visuals_ThighReal_B_FR_link_visual"
+      file="bennett_ThighReal_B_FR_visuals_ThighReal_B_FR_link_visual.stl" scale="1 1 1"/>
+    <mesh name="bennett_CalfReal_B_FR_visuals_CalfReal_B_FR_visual"
+      file="bennett_CalfReal_B_FR_visuals_CalfReal_B_FR_visual.stl" scale="1 1 1"/>
+    <mesh name="bennett_FootTip_FR_visuals_FootTip_FR_visual" file="bennett_FootTip_FR_visuals_FootTip_FR_visual.stl"
+      scale="1 1 1"/>
+    <mesh name="bennett_CalfOppo_B_FR_visuals_CalfOppo_B_FR_visual"
+      file="bennett_CalfOppo_B_FR_visuals_CalfOppo_B_FR_visual.stl" scale="1 1 1"/>
+    <mesh name="bennett_ThighOppo_B_FR_visuals_ThighOppo_B_FR_visual"
+      file="bennett_ThighOppo_B_FR_visuals_ThighOppo_B_FR_visual.stl" scale="1 1 1"/>
+    <mesh name="bennett_MotorThigh_RL_visuals_MotorThigh_RL_visual"
+      file="bennett_MotorThigh_RL_visuals_MotorThigh_RL_visual.stl" scale="1 1 1"/>
+    <mesh name="bennett_ThighReal_B_RL_visuals_ThighReal_B_RL_motor_visual"
+      file="bennett_ThighReal_B_RL_visuals_ThighReal_B_RL_motor_visual.stl" scale="1 1 1"/>
+    <mesh name="bennett_ThighReal_B_RL_visuals_ThighReal_B_RL_link_visual"
+      file="bennett_ThighReal_B_RL_visuals_ThighReal_B_RL_link_visual.stl" scale="1 1 1"/>
+    <mesh name="bennett_CalfReal_B_RL_visuals_CalfReal_B_RL_visual"
+      file="bennett_CalfReal_B_RL_visuals_CalfReal_B_RL_visual.stl" scale="1 1 1"/>
+    <mesh name="bennett_FootTip_RL_visuals_FootTip_RL_visual" file="bennett_FootTip_RL_visuals_FootTip_RL_visual.stl"
+      scale="1 1 1"/>
+    <mesh name="bennett_CalfOppo_B_RL_visuals_CalfOppo_B_RL_visual"
+      file="bennett_CalfOppo_B_RL_visuals_CalfOppo_B_RL_visual.stl" scale="1 1 1"/>
+    <mesh name="bennett_ThighOppo_B_RL_visuals_ThighOppo_B_RL_visual"
+      file="bennett_ThighOppo_B_RL_visuals_ThighOppo_B_RL_visual.stl" scale="1 1 1"/>
+    <mesh name="bennett_MotorThigh_RR_visuals_MotorThigh_RR_visual"
+      file="bennett_MotorThigh_RR_visuals_MotorThigh_RR_visual.stl" scale="1 1 1"/>
+    <mesh name="bennett_ThighReal_B_RR_visuals_ThighReal_B_RR_motor_visual"
+      file="bennett_ThighReal_B_RR_visuals_ThighReal_B_RR_motor_visual.stl" scale="1 1 1"/>
+    <mesh name="bennett_ThighReal_B_RR_visuals_ThighReal_B_RR_link_visual"
+      file="bennett_ThighReal_B_RR_visuals_ThighReal_B_RR_link_visual.stl" scale="1 1 1"/>
+    <mesh name="bennett_CalfReal_B_RR_visuals_CalfReal_B_RR_visual"
+      file="bennett_CalfReal_B_RR_visuals_CalfReal_B_RR_visual.stl" scale="1 1 1"/>
+    <mesh name="bennett_FootTip_RR_visuals_FootTip_RR_visual" file="bennett_FootTip_RR_visuals_FootTip_RR_visual.stl"
+      scale="1 1 1"/>
+    <mesh name="bennett_CalfOppo_B_RR_visuals_CalfOppo_B_RR_visual"
+      file="bennett_CalfOppo_B_RR_visuals_CalfOppo_B_RR_visual.stl" scale="1 1 1"/>
+    <mesh name="bennett_ThighOppo_B_RR_visuals_ThighOppo_B_RR_visual"
+      file="bennett_ThighOppo_B_RR_visuals_ThighOppo_B_RR_visual.stl" scale="1 1 1"/>
+  </asset>
+  <worldbody>
+    <body name="MainBody" pos="0 0 0.34" quat="1 0 0 0">
+      <inertial mass="3.640259981" pos="0.005330000073 0.0003399999987 0.001569999964"
+        quat="0.9999659301 -0.006318916253 -0.004531844628 0.002769888212"
+        diaginertia="0.01255692448 0.0356698297 0.04131324962"/>
+      <freejoint name="floating_base"/>
+      <geom name="MainBody_MainBody_collision_mesh" class="asoverdog_collision" type="box"
+        size="0.1100000052 0.08600000408 0.04800000228" pos="0 0 0.001000000047" quat="1 0 0 0"/>
+      <geom name="MainBody_visuals_MainBody_visual" class="asoverdog_visual" type="mesh"
+        mesh="bennett_MainBody_visuals_MainBody_visual" material="asoverdog_gunmetal" pos="0 0 0" quat="1 0 0 0"/>
+      <body name="MotorThigh_FL" pos="0.1420000046 0.04800000042 0"
+        quat="0.2324748803 0.667798924 0.2324749387 0.6677989443">
+        <inertial mass="0.4156301618" pos="-0.004924491979 0.0001978979999 0.04436150566"
+          quat="0.9986131766 0.02046834924 -0.04843080862 0.002688294576"
+          diaginertia="0.0002899917308 0.0001980528323 0.0001545587729"/>
+        <joint name="motor_hip_FL" type="hinge" pos="0 0 0" axis="0 0 1" ref="-0.67" range="-3.14159292 0.5235999407"
+          armature="0.0042" damping="0.008"/>
+        <geom name="MotorThigh_FL_MotorThigh_FL_collision_mesh" class="asoverdog_collision" type="cylinder"
+          size="0.03925000179 0.0500000024" pos="0.02350000112 6.250399356e-09 0.04800000223"
+          quat="0.4999999563 -0.5 -0.5 0.5000000437"/>
+        <geom name="MotorThigh_FL_visuals_MotorThigh_FL_visual" class="asoverdog_visual" type="mesh"
+          mesh="bennett_MotorThigh_FL_visuals_MotorThigh_FL_visual" material="asoverdog_gunmetal" pos="0 0 0"
+          quat="1 0 0 0"/>
+        <body name="ThighReal_B_FL" pos="0.01399999484 4.710024942e-10 0.04799999297"
+          quat="0.8163137152 -0.5776087935 1.397061458e-08 9.885352829e-09">
+          <inertial mass="0.4851792157" pos="0.03127878532 0.00193220342 -0.01036567613"
+            quat="0.9912439502 0.07920468801 -0.1002200475 -0.03343636686"
+            diaginertia="0.0008086872404 0.0007251391653 0.0001995378989"/>
+          <joint name="motor_thigh_FL" type="hinge" pos="0 0 0" axis="1 0 0" ref="1.91" range="0 4.709999592"
+            armature="0.0042" damping="0.008"/>
+          <geom name="ThighReal_B_FL_visuals_ThighReal_B_FL_motor_visual" class="asoverdog_visual" type="mesh"
+            mesh="bennett_ThighReal_B_FL_visuals_ThighReal_B_FL_motor_visual" material="asoverdog_gunmetal" pos="0 0 0"
+            quat="1 0 0 0"/>
+          <geom name="ThighReal_B_FL_visuals_ThighReal_B_FL_link_visual" class="asoverdog_visual" type="mesh"
+            mesh="bennett_ThighReal_B_FL_visuals_ThighReal_B_FL_link_visual" material="asoverdog_metal" pos="0 0 0"
+            quat="1 0 0 0"/>
+          <body name="CalfReal_B_FL" pos="0.05316987452 0.0129019171 -0.1620000023"
+            quat="0.2671545658 -0.09598575252 0.7005617345 -0.6546972044">
+            <inertial mass="0.1146055385" pos="0.09755951911 0.001772389514 0.0004494706227"
+              quat="0.947269466 0.3195555493 -0.02363580047 0.002481655906"
+              diaginertia="2.138850323e-05 0.0005783506203 0.00058089511"/>
+            <joint name="knee_real_FL" type="hinge" pos="0 0 0" axis="0 0 -1" ref="1.319527282" range="0 3.14159292"/>
+            <geom name="CalfReal_B_FL_CalfReal_B_FL_collision_mesh" class="asoverdog_collision" type="cylinder"
+              size="0.01099999803 0.08650000497" pos="0.103500005 0.005000004277 -0.002999990354"
+              quat="0.7071067691 0 0.7071067933 0"/>
+            <geom name="CalfReal_B_FL_visuals_CalfReal_B_FL_visual" class="asoverdog_visual" type="mesh"
+              mesh="bennett_CalfReal_B_FL_visuals_CalfReal_B_FL_visual" material="asoverdog_metal" pos="0 0 0"
+              quat="1 0 0 0"/>
+            <site name="end_joint_FL_1_pivot" pos="0.1619999409 0.00552628655 0.0180884786" size="0.002" group="4"/>
+            <site name="end_joint_FL_1_axis" pos="0.161999936 0.04882756291 0.04308846791" size="0.002" group="4"/>
+            <body name="FootTip_FL" pos="0.2149999142 0.005000005235 -0.003000000487"
+              quat="0.3535534826 0.6123723826 0.3535534826 0.6123723826">
+              <inertial mass="0.04476184025" pos="0 0 -0.005370312836" quat="0.9659226751 0 0 -0.2588308053"
+                diaginertia="1.072627856e-05 1.07201613e-05 6.64027084e-06"/>
+              <geom name="FootTip_FL_FootTip_FL_collision_sphere" class="asoverdog_collision" type="sphere"
+                size="0.01999999955" pos="0 0 0" quat="0.1830127239 -0.1830127321 -0.6830126949 0.6830126949"/>
+              <geom name="FootTip_FL_visuals_FootTip_FL_visual" class="asoverdog_visual" type="mesh"
+                mesh="bennett_FootTip_FL_visuals_FootTip_FL_visual" material="asoverdog_gunmetal" pos="0 0 0"
+                quat="1 0 0 0"/>
+            </body>
+          </body>
+          <body name="CalfOppo_B_FL" pos="0.05000000075 0 -1.711427065e-09"
+            quat="0.2557006997 0.6592549659 -0.2557007486 -0.6592550108">
+            <inertial mass="0.08412239701" pos="0.05646931008 0.01185538061 -0.005306665786"
+              quat="0.996870014 -0.06068720515 -0.0004941766536 0.05066551201"
+              diaginertia="1.01134583e-05 0.000279570464 0.000284356327"/>
+            <joint name="motor_calf_FL" type="hinge" pos="0 0 0" axis="0 0 -1" ref="-0.74" range="-2.617993878 0"
+              armature="0.0042" damping="0.008"/>
+            <geom name="CalfOppo_B_FL_visuals_CalfOppo_B_FL_visual" class="asoverdog_visual" type="mesh"
+              mesh="bennett_CalfOppo_B_FL_visuals_CalfOppo_B_FL_visual" material="asoverdog_metal" pos="0 0 0"
+              quat="1 0 0 0"/>
+            <body name="ThighOppo_B_FL" pos="0.1619999409 0.01290192055 -0.003169872995"
+              quat="0.1419713531 -0.7920817601 -0.5631769759 0.1878358702">
+              <inertial mass="0.07407175004" pos="-0.02705811895 0.001495233621 -0.05456059799"
+                quat="0.9164139993 -0.07107906609 0.2506203886 -0.303846292"
+                diaginertia="0.0002832851023 0.0002840706729 7.727509001e-06"/>
+              <joint name="knee_oppo_FL" type="hinge" pos="0 0 0" axis="-0.7499996104 0.500000442 0.4330128663"
+                ref="1.319527181" range="0 3.14159292"/>
+              <geom name="ThighOppo_B_FL_ThighOppo_B_FL_collision_mesh" class="asoverdog_collision" type="cylinder"
+                size="0.01100000054 0.06900000328" pos="-0.03858493447 0.002830129302 -0.07702722798"
+                quat="0.25 -0.2499999529 -0.9330127151 0.06698729034"/>
+              <geom name="ThighOppo_B_FL_visuals_ThighOppo_B_FL_visual" class="asoverdog_visual" type="mesh"
+                mesh="bennett_ThighOppo_B_FL_visuals_ThighOppo_B_FL_visual" material="asoverdog_metal" pos="0 0 0"
+                quat="1 0 0 0"/>
+              <site name="end_joint_FL_0_pivot" pos="-0.09217339009 0.01383012999 -0.1338451505" size="0.002"
+                group="4"/>
+              <site name="end_joint_FL_0_axis" pos="-0.09217339009 0.06383012999 -0.1338451505" size="0.002" group="4"/>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="MotorThigh_FR" pos="0.1420000046 -0.04800000042 0"
+        quat="0.2324749387 -0.6677989443 0.2324748803 -0.667798924">
+        <inertial mass="0.4156301618" pos="-0.004924491979 0.0001978979999 0.04436150566"
+          quat="0.9986131766 0.02046834924 -0.04843080862 0.002688294576"
+          diaginertia="0.0002899917308 0.0001980528323 0.0001545587729"/>
+        <joint name="motor_hip_FR" type="hinge" pos="0 0 0" axis="0 0 1" ref="0.67" range="-0.5235999407 3.14159292"
+          armature="0.0042" damping="0.008"/>
+        <geom name="MotorThigh_FR_MotorThigh_FR_collision_mesh" class="asoverdog_collision" type="cylinder"
+          size="0.03925000179 0.0500000024" pos="0.02350000112 6.250399572e-09 0.04800000223"
+          quat="0.4999999563 -0.5 -0.5 0.5000000437"/>
+        <geom name="MotorThigh_FR_visuals_MotorThigh_FR_visual" class="asoverdog_visual" type="mesh"
+          mesh="bennett_MotorThigh_FR_visuals_MotorThigh_FR_visual" material="asoverdog_gunmetal" pos="0 0 0"
+          quat="1 0 0 0"/>
+        <body name="ThighReal_B_FR" pos="0.01399999484 4.710024726e-10 0.04799999297"
+          quat="0.8163137657 0.5776087222 1.397061448e-08 -9.885352751e-09">
+          <inertial mass="0.4851787686" pos="0.03127892315 -0.001938677975 -0.01036028564"
+            quat="0.9912595709 -0.07911482691 -0.1002934436 0.03296259207"
+            diaginertia="0.0008087428287 0.0007251744391 0.0001995329076"/>
+          <joint name="motor_thigh_FR" type="hinge" pos="0 0 0" axis="1 0 0" ref="-1.91" range="-4.709999592 0"
+            armature="0.0042" damping="0.008"/>
+          <geom name="ThighReal_B_FR_visuals_ThighReal_B_FR_motor_visual" class="asoverdog_visual" type="mesh"
+            mesh="bennett_ThighReal_B_FR_visuals_ThighReal_B_FR_motor_visual" material="asoverdog_gunmetal" pos="0 0 0"
+            quat="1 0 0 0"/>
+          <geom name="ThighReal_B_FR_visuals_ThighReal_B_FR_link_visual" class="asoverdog_visual" type="mesh"
+            mesh="bennett_ThighReal_B_FR_visuals_ThighReal_B_FR_link_visual" material="asoverdog_metal" pos="0 0 0"
+            quat="1 0 0 0"/>
+          <body name="CalfReal_B_FR" pos="0.05316987452 -0.0129019171 -0.1620000023"
+            quat="0.2671546798 0.09598563047 0.7005617512 0.6546971579">
+            <inertial mass="0.1146076322" pos="0.09755903482 -0.001772301039 0.0004491685249"
+              quat="0.9472429633 -0.3196341452 -0.02363566689 -0.002477292948"
+              diaginertia="2.138943455e-05 0.0005783681991 0.000580913329"/>
+            <joint name="knee_real_FR" type="hinge" pos="0 0 0" axis="0 0 1" ref="1.319526934" range="0 3.14159292"/>
+            <geom name="CalfReal_B_FR_CalfReal_B_FR_collision_mesh" class="asoverdog_collision" type="cylinder"
+              size="0.01099999799 0.08650000497" pos="0.103500005 -0.004999997251 -0.003000016384"
+              quat="3.090861957e-08 -0.7071067812 -3.090862023e-08 -0.7071067812"/>
+            <geom name="CalfReal_B_FR_visuals_CalfReal_B_FR_visual" class="asoverdog_visual" type="mesh"
+              mesh="bennett_CalfReal_B_FR_visuals_CalfReal_B_FR_visual" material="asoverdog_metal" pos="0 0 0"
+              quat="1 0 0 0"/>
+            <site name="end_joint_FR_1_pivot" pos="0.1619999409 -0.005526295397 0.01808841899" size="0.002" group="4"/>
+            <site name="end_joint_FR_1_axis" pos="0.1619999399 0.03777498241 -0.006911567808" size="0.002" group="4"/>
+            <body name="FootTip_FR" pos="0.2149999142 -0.005000005235 -0.003000000487"
+              quat="0.3535534826 -0.6123723826 0.3535534826 -0.6123723826">
+              <inertial mass="0.04476184025" pos="0 0 -0.005370312836" quat="0.9659226751 0 0 0.2588308053"
+                diaginertia="1.072627856e-05 1.07201613e-05 6.64027084e-06"/>
+              <geom name="FootTip_FR_FootTip_FR_collision_sphere" class="asoverdog_collision" type="sphere"
+                size="0.01999999955" pos="0 0 0" quat="0.1830127239 -0.1830127321 0.6830126949 -0.6830126949"/>
+              <geom name="FootTip_FR_visuals_FootTip_FR_visual" class="asoverdog_visual" type="mesh"
+                mesh="bennett_FootTip_FR_visuals_FootTip_FR_visual" material="asoverdog_gunmetal" pos="0 0 0"
+                quat="1 0 0 0"/>
+            </body>
+          </body>
+          <body name="CalfOppo_B_FR" pos="0.05000000075 0 -1.711427135e-09"
+            quat="0.6592549771 0.2557007285 0.6592549996 0.2557007197">
+            <inertial mass="0.08412234485" pos="0.05646922812 0.01185538247 0.005306669511"
+              quat="0.9968701154 0.0606854717 0.0004939620627 0.05066559609"
+              diaginertia="1.011344739e-05 0.0002795703185 0.0002843561815"/>
+            <joint name="motor_calf_FR" type="hinge" pos="0 0 0" axis="0 0 1" ref="0.74" range="0 2.617993878"
+              armature="0.0042" damping="0.008"/>
+            <geom name="CalfOppo_B_FR_visuals_CalfOppo_B_FR_visual" class="asoverdog_visual" type="mesh"
+              mesh="bennett_CalfOppo_B_FR_visuals_CalfOppo_B_FR_visual" material="asoverdog_metal" pos="0 0 0"
+              quat="1 0 0 0"/>
+            <body name="ThighOppo_B_FR" pos="0.1619999409 0.0129019171 0.003169871867"
+              quat="0.2333704668 0.4167399483 -0.7798806434 0.4045395195">
+              <inertial mass="0.07407030463" pos="-0.03372203186 -0.001495412434 0.05071429536"
+                quat="0.9189430715 0.09036948927 -0.241164511 -0.298691589"
+                diaginertia="0.0002832795435 0.0002840646193 7.726975127e-06"/>
+              <joint name="knee_oppo_FR" type="hinge" pos="0 0 0" axis="-0.7499996104 0.500000442 -0.4330128663"
+                ref="1.319527045" range="0 3.14159292"/>
+              <geom name="ThighOppo_B_FR_ThighOppo_B_FR_collision_mesh" class="asoverdog_collision" type="cylinder"
+                size="0.01100000052 0.06900000328" pos="-0.04741506799 -0.002830132704 0.07192914763"
+                quat="0.2499999553 -0.2499999974 -0.06698730517 0.9330127141"/>
+              <geom name="ThighOppo_B_FR_visuals_ThighOppo_B_FR_visual" class="asoverdog_visual" type="mesh"
+                mesh="bennett_ThighOppo_B_FR_visuals_ThighOppo_B_FR_visual" material="asoverdog_metal" pos="0 0 0"
+                quat="1 0 0 0"/>
+              <site name="end_joint_FR_0_pivot" pos="-0.06982661039 -0.01383012999 0.1467470825" size="0.002"
+                group="4"/>
+              <site name="end_joint_FR_0_axis" pos="-0.06982661039 0.03616987001 0.1467470825" size="0.002" group="4"/>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="MotorThigh_RL" pos="-0.1420000046 0.04800000042 0"
+        quat="0.6677989227 -0.2324749134 -0.6677989456 0.2324749055">
+        <inertial mass="0.4156301618" pos="-0.004924491979 0.0001978979999 0.04436150566"
+          quat="0.9986131766 0.02046834924 -0.04843080862 0.002688294576"
+          diaginertia="0.0002899917308 0.0001980528323 0.0001545587729"/>
+        <joint name="motor_hip_RL" type="hinge" pos="0 0 0" axis="0 0 1" ref="0.67" range="-0.5235999407 3.14159292"
+          armature="0.0042" damping="0.008"/>
+        <geom name="MotorThigh_RL_MotorThigh_RL_collision_mesh" class="asoverdog_collision" type="cylinder"
+          size="0.03925000179 0.0500000024" pos="0.02350000112 6.250403549e-09 0.04800000223"
+          quat="0.4999999563 -0.5 -0.5 0.5000000437"/>
+        <geom name="MotorThigh_RL_visuals_MotorThigh_RL_visual" class="asoverdog_visual" type="mesh"
+          mesh="bennett_MotorThigh_RL_visuals_MotorThigh_RL_visual" material="asoverdog_gunmetal" pos="0 0 0"
+          quat="1 0 0 0"/>
+        <body name="ThighReal_B_RL" pos="0.01399999928 0 0.04799999249" quat="0.5776087579 -0.8163137404 0 0">
+          <inertial mass="0.4851787686" pos="0.03127892315 0.001938677975 0.01036028564"
+            quat="0.9912595709 -0.07911482691 0.1002934436 -0.03296259207"
+            diaginertia="0.0008087428287 0.0007251744391 0.0001995329076"/>
+          <joint name="motor_thigh_RL" type="hinge" pos="0 0 0" axis="1 0 0" ref="-1.91" range="-4.709999592 0"
+            armature="0.0042" damping="0.008"/>
+          <geom name="ThighReal_B_RL_visuals_ThighReal_B_RL_motor_visual" class="asoverdog_visual" type="mesh"
+            mesh="bennett_ThighReal_B_RL_visuals_ThighReal_B_RL_motor_visual" material="asoverdog_gunmetal" pos="0 0 0"
+            quat="1 0 0 0"/>
+          <geom name="ThighReal_B_RL_visuals_ThighReal_B_RL_link_visual" class="asoverdog_visual" type="mesh"
+            mesh="bennett_ThighReal_B_RL_visuals_ThighReal_B_RL_link_visual" material="asoverdog_metal" pos="0 0 0"
+            quat="1 0 0 0"/>
+          <body name="CalfReal_B_RL" pos="0.05316986046 0.0129019171 0.1619999987"
+            quat="0.91726512 -0.2793556598 0.05045146057 0.2793559828">
+            <inertial mass="0.1146076322" pos="-0.09755903482 -0.00127514184 0.001310273423"
+              quat="0.9801553156 -0.1968013607 -0.0192303155 0.01396340745"
+              diaginertia="2.138943455e-05 0.0005783681409 0.0005809132708"/>
+            <joint name="knee_real_RL" type="hinge" pos="0 0 0" axis="-2.883633698e-08 -0.8660255094 -0.499999817"
+              ref="1.319526561" range="0 3.14159292"/>
+            <geom name="CalfReal_B_RL_CalfReal_B_RL_collision_mesh" class="asoverdog_collision" type="cylinder"
+              size="0.01099999799 0.08650000497" pos="-0.103500005 9.809098195e-05 0.005830137661"
+              quat="0.3535533547 0.6123724481 -0.3535533835 -0.6123724481"/>
+            <geom name="CalfReal_B_RL_visuals_CalfReal_B_RL_visual" class="asoverdog_visual" type="mesh"
+              mesh="bennett_CalfReal_B_RL_visuals_CalfReal_B_RL_visual" material="asoverdog_metal" pos="0 0 0"
+              quat="1 0 0 0"/>
+            <site name="end_joint_RL_1_pivot" pos="-0.1619999409 -0.01842820831 -0.004258289933" size="0.002"
+              group="4"/>
+            <site name="end_joint_RL_1_axis" pos="-0.1619999418 0.0248730695 -0.02925827673" size="0.002" group="4"/>
+            <body name="FootTip_RL" pos="-0.2149999142 9.807882518e-05 0.005830131356"
+              quat="0.3535534826 -0.6123723826 0.3535534826 -0.6123723826">
+              <inertial mass="0.04476184025" pos="0 0 0.005370312836" quat="0.9659226751 0 0 -0.2588308053"
+                diaginertia="1.072627856e-05 1.07201613e-05 6.64027084e-06"/>
+              <geom name="FootTip_RL_FootTip_RL_collision_sphere" class="asoverdog_collision" type="sphere"
+                size="0.01999999955" pos="0 0 0" quat="0.1830127239 0.1830127321 0.6830126949 0.6830126949"/>
+              <geom name="FootTip_RL_visuals_FootTip_RL_visual" class="asoverdog_visual" type="mesh"
+                mesh="bennett_FootTip_RL_visuals_FootTip_RL_visual" material="asoverdog_gunmetal" pos="0 0 0"
+                quat="1 0 0 0"/>
+            </body>
+          </body>
+          <body name="CalfOppo_B_RL" pos="0.04999999795 0 -1.711427054e-09"
+            quat="0.6592549771 0.2557007285 0.6592549996 0.2557007197">
+            <inertial mass="0.08412234485" pos="-0.05646922812 -0.01185538247 0.005306669511"
+              quat="0.9968701154 -0.0606854717 -0.0004939620627 0.05066559609"
+              diaginertia="1.011344739e-05 0.0002795703185 0.0002843561815"/>
+            <joint name="motor_calf_RL" type="hinge" pos="0 0 0" axis="0 0 1" ref="0.74" range="0 2.617993878"
+              armature="0.0042" damping="0.008"/>
+            <geom name="CalfOppo_B_RL_visuals_CalfOppo_B_RL_visual" class="asoverdog_visual" type="mesh"
+              mesh="bennett_CalfOppo_B_RL_visuals_CalfOppo_B_RL_visual" material="asoverdog_metal" pos="0 0 0"
+              quat="1 0 0 0"/>
+            <body name="ThighOppo_B_RL" pos="-0.1619999409 -0.0129019171 0.003169871867"
+              quat="0.4167399532 0.2333700461 0.4045397089 -0.7798806683">
+              <inertial mass="0.07407030463" pos="0.03372203186 -0.001495412434 -0.05071429536"
+                quat="0.9189430715 -0.09036948927 -0.241164511 0.298691589"
+                diaginertia="0.0002832795435 0.0002840646193 7.726975127e-06"/>
+              <joint name="knee_oppo_RL" type="hinge" pos="0 0 0" axis="0.7499996237 0.5000004341 0.4330128524"
+                ref="1.319526205" range="0 3.14159292"/>
+              <geom name="ThighOppo_B_RL_ThighOppo_B_RL_collision_mesh" class="asoverdog_collision" type="cylinder"
+                size="0.01100000052 0.06900000328" pos="0.04741506714 -0.002830129026 -0.07192914812"
+                quat="0.06698728353 0.9330127091 0.2499999811 0.249999996"/>
+              <geom name="ThighOppo_B_RL_visuals_ThighOppo_B_RL_visual" class="asoverdog_visual" type="mesh"
+                mesh="bennett_ThighOppo_B_RL_visuals_ThighOppo_B_RL_visual" material="asoverdog_metal" pos="0 0 0"
+                quat="1 0 0 0"/>
+              <site name="end_joint_RL_0_pivot" pos="0.06982661039 -0.01383012999 -0.1467470825" size="0.002"
+                group="4"/>
+              <site name="end_joint_RL_0_axis" pos="0.06982661039 0.03616987001 -0.1467470825" size="0.002" group="4"/>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="MotorThigh_RR" pos="-0.1420000046 -0.04800000042 0"
+        quat="0.6677989227 0.2324749134 -0.6677989456 -0.2324749055">
+        <inertial mass="0.4156301618" pos="-0.004924491979 0.0001978979999 0.04436150566"
+          quat="0.9986131766 0.02046834924 -0.04843080862 0.002688294576"
+          diaginertia="0.0002899917308 0.0001980528323 0.0001545587729"/>
+        <joint name="motor_hip_RR" type="hinge" pos="0 0 0" axis="0 0 1" ref="-0.67" range="-3.14159292 0.5235999407"
+          armature="0.0042" damping="0.008"/>
+        <geom name="MotorThigh_RR_MotorThigh_RR_collision_mesh" class="asoverdog_collision" type="cylinder"
+          size="0.03925000179 0.0500000024" pos="0.02350000112 6.250403355e-09 0.04800000223"
+          quat="0.4999999563 -0.5 -0.5 0.5000000437"/>
+        <geom name="MotorThigh_RR_visuals_MotorThigh_RR_visual" class="asoverdog_visual" type="mesh"
+          mesh="bennett_MotorThigh_RR_visuals_MotorThigh_RR_visual" material="asoverdog_gunmetal" pos="0 0 0"
+          quat="1 0 0 0"/>
+        <body name="ThighReal_B_RR" pos="0.01399999928 0 0.04799999249" quat="0.5776087579 0.8163137404 0 0">
+          <inertial mass="0.4851792157" pos="0.03127878532 -0.00193220342 0.01036567613"
+            quat="0.9912439502 0.07920468801 0.1002200475 0.03343636686"
+            diaginertia="0.0008086872404 0.0007251391653 0.0001995378989"/>
+          <joint name="motor_thigh_RR" type="hinge" pos="0 0 0" axis="1 0 0" ref="1.91" range="0 4.709999592"
+            armature="0.0042" damping="0.008"/>
+          <geom name="ThighReal_B_RR_visuals_ThighReal_B_RR_motor_visual" class="asoverdog_visual" type="mesh"
+            mesh="bennett_ThighReal_B_RR_visuals_ThighReal_B_RR_motor_visual" material="asoverdog_gunmetal" pos="0 0 0"
+            quat="1 0 0 0"/>
+          <geom name="ThighReal_B_RR_visuals_ThighReal_B_RR_link_visual" class="asoverdog_visual" type="mesh"
+            mesh="bennett_ThighReal_B_RR_visuals_ThighReal_B_RR_link_visual" material="asoverdog_metal" pos="0 0 0"
+            quat="1 0 0 0"/>
+          <body name="CalfReal_B_RR" pos="0.05316986046 -0.0129019171 0.1619999987"
+            quat="0.917265156 0.2793556103 0.05045135329 -0.2793559333">
+            <inertial mass="0.1146055385" pos="-0.09755951911 0.001275447779 0.001310199033"
+              quat="0.9801362639 0.1968961513 -0.01922844584 -0.0139669859"
+              diaginertia="2.138850323e-05 0.0005783505621 0.0005808950518"/>
+            <joint name="knee_real_RR" type="hinge" pos="0 0 0" axis="-2.883633698e-08 -0.8660255094 0.499999817"
+              ref="1.319526818" range="0 3.14159292"/>
+            <geom name="CalfReal_B_RR_CalfReal_B_RR_collision_mesh" class="asoverdog_collision" type="cylinder"
+              size="0.01099999803 0.08650000497" pos="-0.103500005 -9.805884383e-05 0.005830117081"
+              quat="0.6123723984 0.3535533949 -0.612372468 -0.3535533949"/>
+            <geom name="CalfReal_B_RR_visuals_CalfReal_B_RR_visual" class="asoverdog_visual" type="mesh"
+              mesh="bennett_CalfReal_B_RR_visuals_CalfReal_B_RR_visual" material="asoverdog_metal" pos="0 0 0"
+              quat="1 0 0 0"/>
+            <site name="end_joint_RR_1_pivot" pos="-0.1619999409 0.01842820831 -0.004258350004" size="0.002" group="4"/>
+            <site name="end_joint_RR_1_axis" pos="-0.1619999458 0.06172948466 0.02074163931" size="0.002" group="4"/>
+            <body name="FootTip_RR" pos="-0.2149999142 -9.807882518e-05 0.005830131356"
+              quat="0.3535534826 0.6123723826 0.3535534826 0.6123723826">
+              <inertial mass="0.04476184025" pos="0 0 0.005370312836" quat="0.9659226751 0 0 0.2588308053"
+                diaginertia="1.072627856e-05 1.07201613e-05 6.64027084e-06"/>
+              <geom name="FootTip_RR_FootTip_RR_collision_sphere" class="asoverdog_collision" type="sphere"
+                size="0.01999999955" pos="0 0 0" quat="0.6830126643 0.6830127337 0.1830127127 0.1830127127"/>
+              <geom name="FootTip_RR_visuals_FootTip_RR_visual" class="asoverdog_visual" type="mesh"
+                mesh="bennett_FootTip_RR_visuals_FootTip_RR_visual" material="asoverdog_gunmetal" pos="0 0 0"
+                quat="1 0 0 0"/>
+            </body>
+          </body>
+          <body name="CalfOppo_B_RR" pos="0.04999999795 0 -1.711427013e-09"
+            quat="0.2557006997 0.6592549659 -0.2557007486 -0.6592550108">
+            <inertial mass="0.08412239701" pos="-0.05646931008 -0.01185538061 -0.005306665786"
+              quat="0.996870014 0.06068720515 0.0004941766536 0.05066551201"
+              diaginertia="1.01134583e-05 0.000279570464 0.000284356327"/>
+            <joint name="motor_calf_RR" type="hinge" pos="0 0 0" axis="0 0 -1" ref="-0.74" range="-2.617993878 0"
+              armature="0.0042" damping="0.008"/>
+            <geom name="CalfOppo_B_RR_visuals_CalfOppo_B_RR_visual" class="asoverdog_visual" type="mesh"
+              mesh="bennett_CalfOppo_B_RR_visuals_CalfOppo_B_RR_visual" material="asoverdog_metal" pos="0 0 0"
+              quat="1 0 0 0"/>
+            <body name="ThighOppo_B_RR" pos="-0.1619999409 -0.0129019211 -0.003169870739"
+              quat="0.7920816025 -0.141971453 -0.1878360521 0.5631771116">
+              <inertial mass="0.07407175004" pos="0.02705811895 0.001495233621 0.05456059799"
+                quat="0.9164139993 0.07107906609 0.2506203886 0.303846292"
+                diaginertia="0.0002832851023 0.0002840706729 7.727509001e-06"/>
+              <joint name="knee_oppo_RR" type="hinge" pos="0 0 0" axis="0.7499996237 0.5000004341 -0.4330128524"
+                ref="1.319526408" range="0 3.14159292"/>
+              <geom name="ThighOppo_B_RR_ThighOppo_B_RR_collision_mesh" class="asoverdog_collision" type="cylinder"
+                size="0.01100000054 0.06900000328" pos="0.03858493057 0.002830128167 0.07702723024"
+                quat="0.9330127239 0.06698728971 0.2499999675 0.2499999526"/>
+              <geom name="ThighOppo_B_RR_visuals_ThighOppo_B_RR_visual" class="asoverdog_visual" type="mesh"
+                mesh="bennett_ThighOppo_B_RR_visuals_ThighOppo_B_RR_visual" material="asoverdog_metal" pos="0 0 0"
+                quat="1 0 0 0"/>
+              <site name="end_joint_RR_0_pivot" pos="0.09217339009 0.01383012999 0.1338451505" size="0.002" group="4"/>
+              <site name="end_joint_RR_0_axis" pos="0.09217339009 0.06383012999 0.1338451505" size="0.002" group="4"/>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <equality>
+    <!-- Two point constraints per revolute loop preserve rotation about its hinge axis. -->
+    <connect name="end_joint_FL_pivot" site1="end_joint_FL_0_pivot" site2="end_joint_FL_1_pivot" solref="0.005 1"
+      solimp="0.99 0.999 0.001"/>
+    <connect name="end_joint_FL_axis" site1="end_joint_FL_0_axis" site2="end_joint_FL_1_axis" solref="0.005 1"
+      solimp="0.99 0.999 0.001"/>
+    <connect name="end_joint_FR_pivot" site1="end_joint_FR_0_pivot" site2="end_joint_FR_1_pivot" solref="0.005 1"
+      solimp="0.99 0.999 0.001"/>
+    <connect name="end_joint_FR_axis" site1="end_joint_FR_0_axis" site2="end_joint_FR_1_axis" solref="0.005 1"
+      solimp="0.99 0.999 0.001"/>
+    <connect name="end_joint_RL_pivot" site1="end_joint_RL_0_pivot" site2="end_joint_RL_1_pivot" solref="0.005 1"
+      solimp="0.99 0.999 0.001"/>
+    <connect name="end_joint_RL_axis" site1="end_joint_RL_0_axis" site2="end_joint_RL_1_axis" solref="0.005 1"
+      solimp="0.99 0.999 0.001"/>
+    <connect name="end_joint_RR_pivot" site1="end_joint_RR_0_pivot" site2="end_joint_RR_1_pivot" solref="0.005 1"
+      solimp="0.99 0.999 0.001"/>
+    <connect name="end_joint_RR_axis" site1="end_joint_RR_0_axis" site2="end_joint_RR_1_axis" solref="0.005 1"
+      solimp="0.99 0.999 0.001"/>
+  </equality>
+  <actuator>
+    <!-- Bounded joint-position offsets from home for interactive simulation. -->
+    <general name="motor_hip_FL" joint="motor_hip_FL" ctrlrange="-0.35 0.35" forcerange="-17 17" gaintype="fixed"
+      biastype="affine" gainprm="42" biasprm="-28.14 -42 -1.5"/>
+    <general name="motor_thigh_FL" joint="motor_thigh_FL" ctrlrange="-0.35 0.35" forcerange="-17 17" gaintype="fixed"
+      biastype="affine" gainprm="42" biasprm="80.22 -42 -1.5"/>
+    <general name="motor_calf_FL" joint="motor_calf_FL" ctrlrange="-0.35 0.35" forcerange="-17 17" gaintype="fixed"
+      biastype="affine" gainprm="42" biasprm="-31.08 -42 -1.5"/>
+    <general name="motor_hip_FR" joint="motor_hip_FR" ctrlrange="-0.35 0.35" forcerange="-17 17" gaintype="fixed"
+      biastype="affine" gainprm="42" biasprm="28.14 -42 -1.5"/>
+    <general name="motor_thigh_FR" joint="motor_thigh_FR" ctrlrange="-0.35 0.35" forcerange="-17 17" gaintype="fixed"
+      biastype="affine" gainprm="42" biasprm="-80.22 -42 -1.5"/>
+    <general name="motor_calf_FR" joint="motor_calf_FR" ctrlrange="-0.35 0.35" forcerange="-17 17" gaintype="fixed"
+      biastype="affine" gainprm="42" biasprm="31.08 -42 -1.5"/>
+    <general name="motor_hip_RL" joint="motor_hip_RL" ctrlrange="-0.35 0.35" forcerange="-17 17" gaintype="fixed"
+      biastype="affine" gainprm="42" biasprm="28.14 -42 -1.5"/>
+    <general name="motor_thigh_RL" joint="motor_thigh_RL" ctrlrange="-0.35 0.35" forcerange="-17 17" gaintype="fixed"
+      biastype="affine" gainprm="42" biasprm="-80.22 -42 -1.5"/>
+    <general name="motor_calf_RL" joint="motor_calf_RL" ctrlrange="-0.35 0.35" forcerange="-17 17" gaintype="fixed"
+      biastype="affine" gainprm="42" biasprm="31.08 -42 -1.5"/>
+    <general name="motor_hip_RR" joint="motor_hip_RR" ctrlrange="-0.35 0.35" forcerange="-17 17" gaintype="fixed"
+      biastype="affine" gainprm="42" biasprm="-28.14 -42 -1.5"/>
+    <general name="motor_thigh_RR" joint="motor_thigh_RR" ctrlrange="-0.35 0.35" forcerange="-17 17" gaintype="fixed"
+      biastype="affine" gainprm="42" biasprm="80.22 -42 -1.5"/>
+    <general name="motor_calf_RR" joint="motor_calf_RR" ctrlrange="-0.35 0.35" forcerange="-17 17" gaintype="fixed"
+      biastype="affine" gainprm="42" biasprm="-31.08 -42 -1.5"/>
+  </actuator>
+  <keyframe>
+    <key name="home"
+      qpos="0 0 0.34 1 0 0 0 -0.67 1.91 1.319527282 -0.74 1.319527181 0.67 -1.91 1.319526934 0.74 1.319527045 0.67 -1.91 1.319526561 0.74 1.319526205 -0.67 1.91 1.319526818 -0.74 1.319526408"/>
+  </keyframe>
+</mujoco>
