@@ -56,6 +56,7 @@ CAMERA_MAP = {}
 
 # pylint: disable=line-too-long
 KEYFRAME_MAP = {
+  'asmagiclaw/asmagiclaw': '0.75 -0.75 0.75 -0.75 0.75 0.75',
   'pal_talos/talos': (
     '0 0 1.025 0 0 0 0 0 0.15 0 0 0.3 0.4 -0.5 -1.5 0 0 0 0 -0.4 0 0 0 0 0'
     ' -0.3 -0.4 0.5 -1.5 0 0 0 0 -0.4 0 0 0 0 0 0 0 -0.4 0.8 -0.4 0 0 0'
@@ -98,12 +99,14 @@ KEEP_LIGHT = ['go1', 'a1', 'op3', 'aloha', 'left_hand', 'stretch', 'piper']
 LIVE_REPO = 'google-deepmind/mujoco_menagerie'
 LIVE_REF = 'main'
 LIVE_MODEL_REFS = {
+  'asmagiclaw': 'ASimpleMagic/mujoco_menagerie/main',
   'asroballet': 'ASimpleMagic/mujoco_menagerie/main',
   'asoverdog': 'ASimpleMagic/mujoco_menagerie/main',
 }
 
-# The revolute loop constraints remove eight of the twenty tree coordinates.
+# Count independent coordinates for closed-chain mechanisms.
 DOF_OVERRIDES = {
+  'asmagiclaw/asmagiclaw': 1,
   'asoverdog/asoverdog_bennett': 12,
   'asoverdog/asoverdog_planar': 12,
   'asoverdog/asoverdog_spherical': 12,

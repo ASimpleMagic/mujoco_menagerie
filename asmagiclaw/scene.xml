@@ -1,0 +1,12 @@
+<mujoco model="asMagiClaw workbench">
+  <include file="asmagiclaw.xml"/>
+  <option timestep=".002" gravity="0 0 -9.81" integrator="implicitfast" iterations="100" tolerance="1e-10"
+    cone="elliptic">
+    <flag multiccd="enable"/>
+  </option>
+  <include file="common/workbench.xml"/>
+  <keyframe>
+    <key name="home" ctrl="0"/>
+    <key name="open" qpos="1.1 -1.1 1.1 -1.1 1.1 1.1" ctrl="1.1"/>
+  </keyframe>
+</mujoco>

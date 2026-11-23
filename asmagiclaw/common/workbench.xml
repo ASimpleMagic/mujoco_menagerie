@@ -1,0 +1,15 @@
+<mujocoinclude>
+  <visual>
+    <global azimuth="125" elevation="-24"/>
+    <headlight diffuse="0.65 0.65 0.65" ambient="0.35 0.35 0.35" specular="0.15 0.15 0.15"/>
+  </visual>
+  <asset>
+    <texture name="workbench_grid" type="2d" builtin="checker" width="256" height="256" rgb1="0.25 0.32 0.36"
+      rgb2="0.30 0.37 0.41"/>
+    <material name="workbench_floor" texture="workbench_grid" texrepeat="4 4" texuniform="true"/>
+  </asset>
+  <worldbody>
+    <light name="workbench_key" pos="0.25 -0.35 0.65" dir="-0.15 0.25 -1" directional="true"/>
+    <geom name="floor" type="plane" pos="0 0 -0.10" size="0 0 0.03" material="workbench_floor"/>
+  </worldbody>
+</mujocoinclude>

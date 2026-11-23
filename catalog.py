@@ -110,6 +110,7 @@ MODEL_MAP = {
   'asoverdog/asoverdog_bennett': ModelType.QUADRUPED,
   'asoverdog/asoverdog_planar': ModelType.QUADRUPED,
   'asoverdog/asoverdog_spherical': ModelType.QUADRUPED,
+  'asmagiclaw/asmagiclaw': ModelType.END_EFFECTOR,
   'shadow_dexee/shadow_dexee': ModelType.END_EFFECTOR,
   'pal_talos/talos': ModelType.HUMANOID,
   'leap_hand/left_hand': ModelType.END_EFFECTOR,
