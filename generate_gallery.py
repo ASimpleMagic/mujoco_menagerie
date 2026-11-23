@@ -115,6 +115,13 @@ GALLERY_NAMES = {
   'asoverdog/asoverdog_spherical': 'asOverDog Spherical',
 }
 
+STUDIO_SAMPLES = {
+  'asroballet/asRoBallet_floating_ball': 'asroballet',
+  'asoverdog/asoverdog_bennett': 'asoverdog-bennett',
+  'asoverdog/asoverdog_planar': 'asoverdog-planar',
+  'asoverdog/asoverdog_spherical': 'asoverdog-spherical',
+}
+
 
 def live_url(xml_path):
   maker = xml_path.split('/', 1)[0]
@@ -280,13 +287,19 @@ def _row(robot, png_path, xml_path, nu):
     if pathlib.Path(license_path).exists()
     else 'Unknown'
   )
+  previews = []
   if png_path is not None:
-    preview = (
+    previews.append(
       f"<a href='{live_url(xml_path)}' title='Open live preview for {name}'>"
       f"<img src='{png_path}' width={THUMB_WIDTH}></a>"
     )
-  else:
-    preview = ''
+  studio_sample = STUDIO_SAMPLES.get(robot)
+  if studio_sample:
+    previews.append(
+      f"<a href='https://asimplemagic.com/?sample={studio_sample}'"
+      f" title='Open {name} in Studio'>Open&nbsp;in&nbsp;Studio</a>"
+    )
+  preview = '<br>'.join(previews)
   dof = str(nu) if nu is not None else '—'
   return f'| {preview} | {name} | {dof} | [{license_name}]({license_path}) |'
 
