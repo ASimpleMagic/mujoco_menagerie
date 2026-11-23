@@ -125,6 +125,10 @@ STUDIO_SAMPLES = {
   'asoverdog/asoverdog_spherical': 'asoverdog-spherical',
 }
 
+STUDIO_PROJECT_ZIPS = {
+  'asmagiclaw/asmagiclaw': 'assets/asmagiclaw-studio.zip',
+}
+
 
 def live_url(xml_path):
   maker = xml_path.split('/', 1)[0]
@@ -301,6 +305,15 @@ def _row(robot, png_path, xml_path, nu):
     previews.append(
       f"<a href='https://asimplemagic.com/?sample={studio_sample}'"
       f" title='Open {name} in Studio'>Open&nbsp;in&nbsp;Studio</a>"
+    )
+  elif studio_zip := STUDIO_PROJECT_ZIPS.get(robot):
+    repo_ref = LIVE_MODEL_REFS[maker]
+    zip_url = f'https://raw.githubusercontent.com/{repo_ref}/{studio_zip}'
+    previews.append(
+      f"<a href='{zip_url}' title='Download the {name} project ZIP'>"
+      'Download&nbsp;ZIP</a> · '
+      "<a href='https://asimplemagic.com/' title='Open Studio and choose Import ZIP'>"
+      'Open&nbsp;in&nbsp;Studio</a><br>Import&nbsp;ZIP'
     )
   preview = '<br>'.join(previews)
   dof = str(nu) if nu is not None else '—'
