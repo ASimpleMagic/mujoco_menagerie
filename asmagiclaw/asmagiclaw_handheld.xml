@@ -8,6 +8,8 @@
     <mesh name="phone_holder" file="phone_holder.stl" scale="0.001 0.001 0.001"/>
     <mesh name="phone" file="phone.stl" scale="0.001 0.001 0.001"/>
     <mesh name="fusion_camera" file="fusion_camera.stl" scale="0.001 0.001 0.001"/>
+    <material name="phone_lens_rim" rgba="0.64 0.66 0.7 1" specular="0.45" shininess="0.6"/>
+    <material name="phone_lens_glass" rgba="0.105 0.16 0.21 1" specular="0.85" shininess="0.9"/>
   </asset>
   <worldbody>
     <body name="shell" pos="0 0 0" quat=".5 .5 .5 .5">
@@ -46,6 +48,19 @@
             euler="5.761198681745167e-16 0.270883927837755 1.570796326794897">
             <geom name="phone_geom" mesh="phone" material="black" pos="0 0 0" euler="0 0 0" class="asmagiclaw_visual"/>
             <geom name="phone_col" mesh="phone" pos="0 0 0" euler="0 0 0" mass="0.005" class="asmagiclaw_collision"/>
+            <!-- Match the CAD lens centers. Offset the faces slightly to avoid overlapping render surfaces. -->
+            <geom name="rear_lens_1_rim" type="cylinder" pos="0.0102413 0.054 -0.001155" size="0.00635 0.000125"
+              material="phone_lens_rim" mass="0" class="asmagiclaw_visual"/>
+            <geom name="rear_lens_1_glass" type="cylinder" pos="0.0102413 0.054 -0.001225" size="0.005 0.000085"
+              material="phone_lens_glass" mass="0" class="asmagiclaw_visual"/>
+            <geom name="rear_lens_2_rim" type="cylinder" pos="0.0237587 0.04625 -0.001155" size="0.00635 0.000125"
+              material="phone_lens_rim" mass="0" class="asmagiclaw_visual"/>
+            <geom name="rear_lens_2_glass" type="cylinder" pos="0.0237587 0.04625 -0.001225" size="0.005 0.000085"
+              material="phone_lens_glass" mass="0" class="asmagiclaw_visual"/>
+            <geom name="rear_lens_3_rim" type="cylinder" pos="0.0237587 0.06175 -0.001155" size="0.00635 0.000125"
+              material="phone_lens_rim" mass="0" class="asmagiclaw_visual"/>
+            <geom name="rear_lens_3_glass" type="cylinder" pos="0.0237587 0.06175 -0.001225" size="0.005 0.000085"
+              material="phone_lens_glass" mass="0" class="asmagiclaw_visual"/>
             <inertial mass="0.189" pos="-5.0001144e-05 0 0.003075"
               diaginertia="0.0003398164875 8.13804075e-05 0.000419471955"/>
             <body name="fusion_camera" pos="0.02375870704650911 0.06175000190734865 -0.0012499999999999734"
