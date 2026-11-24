@@ -65,6 +65,8 @@
               diaginertia="0.0003398164875 8.13804075e-05 0.000419471955"/>
             <body name="fusion_camera" pos="0.02375870704650911 0.06175000190734865 -0.0012499999999999734"
               euler="3.885780586188047e-16 -0.0 -1.5707963267948968">
+              <!-- The published lens frame already faces the work area in landscape orientation. -->
+              <camera name="iphone_12_pro_rear" pos="0 0 -0.0002" mode="fixed" fovy="92" resolution="1280 960"/>
               <geom name="fusion_camera_geom" material="black" mesh="fusion_camera" pos="0 0 0" euler="0 0 0"
                 class="asmagiclaw_visual"/>
               <inertial mass="7.850000000000001e-06"

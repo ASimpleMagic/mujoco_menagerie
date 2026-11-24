@@ -1,0 +1,45 @@
+<mujoco model="asMagiClaw Handheld pose workbench">
+  <compiler angle="radian" autolimits="true"/>
+  <option timestep=".002" gravity="0 0 -9.81" integrator="implicitfast" iterations="100" tolerance="1e-10"
+    cone="elliptic">
+    <flag multiccd="enable"/>
+  </option>
+  <include file="common/workbench.xml"/>
+  <asset>
+    <model name="handheld" file="asmagiclaw_handheld.xml"/>
+  </asset>
+  <default>
+    <default class="handheld_slide">
+      <joint type="slide" armature="0.05"/>
+      <position kp="800" dampratio="1"/>
+    </default>
+    <default class="handheld_hinge">
+      <joint type="hinge" armature="0.005" range="-3.14159 3.14159"/>
+      <position kp="40" dampratio="1" ctrlrange="-3.14159 3.14159"/>
+    </default>
+  </default>
+  <worldbody>
+    <geom name="floor" type="plane" pos="0 0 -0.15" size="0 0 0.03" material="workbench_floor"/>
+    <body name="handheld_pose">
+      <joint name="handheld_x" class="handheld_slide" axis="1 0 0" range="-0.25 0.25"/>
+      <joint name="handheld_y" class="handheld_slide" axis="0 1 0" range="-0.25 0.25"/>
+      <joint name="handheld_z" class="handheld_slide" axis="0 0 1" range="-0.02 0.32"/>
+      <joint name="handheld_roll" class="handheld_hinge" axis="1 0 0"/>
+      <joint name="handheld_pitch" class="handheld_hinge" axis="0 1 0"/>
+      <joint name="handheld_yaw" class="handheld_hinge" axis="0 0 1"/>
+      <attach model="handheld" body="shell" prefix="gripper_"/>
+    </body>
+  </worldbody>
+  <actuator>
+    <position name="handheld_x" joint="handheld_x" class="handheld_slide" inheritrange="1"/>
+    <position name="handheld_y" joint="handheld_y" class="handheld_slide" inheritrange="1"/>
+    <position name="handheld_z" joint="handheld_z" class="handheld_slide" inheritrange="1"/>
+    <position name="handheld_roll" joint="handheld_roll" class="handheld_hinge"/>
+    <position name="handheld_pitch" joint="handheld_pitch" class="handheld_hinge"/>
+    <position name="handheld_yaw" joint="handheld_yaw" class="handheld_hinge"/>
+  </actuator>
+  <keyframe>
+    <key name="home"/>
+    <key name="open" qpos="0 0 0 0 0 0 1.1 -1.1 1.1 -1.1 1.1 1.1" ctrl="0 0 0 0 0 0 1.1"/>
+  </keyframe>
+</mujoco>
