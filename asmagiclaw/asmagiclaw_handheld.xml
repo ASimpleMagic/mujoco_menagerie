@@ -1,0 +1,64 @@
+<mujoco model="asMagiClaw Handheld">
+  <compiler angle="radian" eulerseq="XYZ" inertiagrouprange="0 0" autolimits="true" meshdir="assets"/>
+  <include file="common/mechanism.xml"/>
+  <asset>
+    <mesh name="handle" file="handle.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="trigger" file="trigger.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="cold_shoe" file="cold_shoe.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="phone_holder" file="phone_holder.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="phone" file="phone.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="fusion_camera" file="fusion_camera.stl" scale="0.001 0.001 0.001"/>
+  </asset>
+  <worldbody>
+    <body name="shell" pos="0 0 0" quat=".5 .5 .5 .5">
+      <body name="handle" pos="1.1222063577801364e-17 5.8913543780757585e-18 0.06970274022901138"
+        euler="-1.5707963267948974 1.5707963267948961 0">
+        <geom name="handle_geom" mesh="handle" pos="0 0 0" euler="0 0 0" class="asmagiclaw_visual"/>
+        <geom name="handle_col" mesh="handle" pos="0 0 0" euler="0 0 0" class="asmagiclaw_collision"/>
+        <inertial mass="0.1013743826" pos="0.07852329032149456 -3.2129403301853494e-07 -0.027412159974533456"
+          fullinertia="0.0002218851722 0.000385425982 0.0002425710869 4.637965276e-10 8.223256976e-05 1.486780834e-10"/>
+        <body name="trigger" pos="8.881784197001253e-18 -6.96470283726752e-17 -5.662137425562445e-17"
+          euler="-1.1280157226387006e-26 -7.053317678472085e-16 9.992007221577638e-16">
+          <geom name="trigger_geom" mesh="trigger" pos="0 0 0" euler="0 0 0" class="asmagiclaw_visual"/>
+          <geom name="trigger_col" mesh="trigger" pos="0 0 0" euler="0 0 0" class="asmagiclaw_collision"/>
+          <inertial mass="0.05390523641" pos="0.09392272192349713 -5.809422311719494e-07 -0.02324460484851605"
+            fullinertia="2.215331541e-05 5.456991343e-05 3.603632749e-05 -2.329051021e-09 2.032487931e-05 8.160356199e-10"/>
+        </body>
+      </body>
+      <body name="cold_shoe" pos="-4.794371623618879e-07 0.06494457620631652 0.014228030288339856"
+        euler="1.5707963267948983 1.1344640137963138 1.5707963267948968">
+        <geom name="cold_shoe_geom" mesh="cold_shoe" material="black" pos="0 0 0" euler="0 0 0"
+          class="asmagiclaw_visual"/>
+        <geom name="cold_shoe_col" mesh="cold_shoe" pos="0 0 0" euler="0 0 0" mass="0.005"
+          class="asmagiclaw_collision"/>
+        <inertial mass="0.06809085000208817" pos="-0.0004682285408064077 0.006272933645659613 7.222751213130775e-18"
+          fullinertia="4.60194038813475e-06 9.214205368077162e-06 6.473933916345851e-06 1.9382273277443718e-07 1.5621191425825622e-20 5.6576330405289305e-22"/>
+        <body name="phone_holder" pos="-0.0009499999999996445 0.014800000000000032 -4.755168426986284e-17"
+          euler="0.2708839278377733 1.2566370614359168 -2.5149300245106996e-15">
+          <geom name="phone_holder_geom" mesh="phone_holder" material="white" pos="0 0 0" euler="0 0 0"
+            class="asmagiclaw_visual"/>
+          <geom name="phone_holder_col" mesh="phone_holder" pos="0 0 0" euler="0 0 0" mass="0.005"
+            class="asmagiclaw_collision"/>
+          <inertial mass="0.05440462887363338" pos="0.000624393384441646 0.0386388290258451 -0.010505279263032904"
+            fullinertia="3.7784505930161666e-05 2.1337047098838338e-05 5.212901213071364e-05 -1.2504612975416596e-07 -3.413793999171691e-07 9.25206901249912e-06"/>
+          <body name="iphone_12_pro" pos="-5.341838082983941e-15 0.04035172894113757 -0.007543022429482603"
+            euler="5.761198681745167e-16 0.270883927837755 1.570796326794897">
+            <geom name="phone_geom" mesh="phone" material="black" pos="0 0 0" euler="0 0 0" class="asmagiclaw_visual"/>
+            <geom name="phone_col" mesh="phone" pos="0 0 0" euler="0 0 0" mass="0.005" class="asmagiclaw_collision"/>
+            <inertial mass="0.189" pos="-5.0001144e-05 0 0.003075"
+              diaginertia="0.0003398164875 8.13804075e-05 0.000419471955"/>
+            <body name="fusion_camera" pos="0.02375870704650911 0.06175000190734865 -0.0012499999999999734"
+              euler="3.885780586188047e-16 -0.0 -1.5707963267948968">
+              <geom name="fusion_camera_geom" material="black" mesh="fusion_camera" pos="0 0 0" euler="0 0 0"
+                class="asmagiclaw_visual"/>
+              <inertial mass="7.850000000000001e-06"
+                pos="2.0328790734103208e-19 -1.0842021724855044e-19 0.0005000000000000009"
+                fullinertia="1.3083333333279226e-12 1.308333333354112e-12 1.3083333333085307e-12 4.183108499333564e-24 -1.0751732376055467e-23 8.351171843482752e-24"/>
+            </body>
+          </body>
+        </body>
+      </body>
+      <include file="common/gripper.xml"/>
+    </body>
+  </worldbody>
+</mujoco>

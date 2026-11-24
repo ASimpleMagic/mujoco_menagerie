@@ -1,0 +1,126 @@
+<mujocoinclude>
+  <site name="ft_frame" pos="0 0 0" size="0.01 0.01 0.01" rgba="0 0 0 0" type="sphere" group="1"/>
+  <geom name="shell_geom" mesh="shell" material="white" pos="0 0 0" euler="0 0 0" class="asmagiclaw_visual"/>
+  <geom name="shell_col" mesh="shell" pos="0 0 0" euler="0 0 0" mass="0.005" class="asmagiclaw_collision"/>
+  <inertial mass="0.1823837915783729" pos="3.145840828751278e-07 0.0031600577459602805 0.09215368023633952"
+    fullinertia="0.00040046813643436274 0.00033625071928533297 0.00018522471592250628 -1.1884037976282439e-08 -2.2254509187138975e-09 4.934039557388564e-05"/>
+  <body name="left_drive_beam" pos="-0.0035000000000004793 0.00020000000000000817 0.09328751416757722"
+    euler="1.5707963267948966 -9.860761315262672e-32 4.2769362789406708e-16">
+    <joint name="left_drive_beam2shell" type="hinge"
+      axis="5.664715059722104e-16 -1.0895721024521484e-11 -1.000000000000001"
+      pos="0.03500000000000043 0.03150048583242055 -1.359619113248183e-12" damping="0.01" armature="0.0001"/>
+    <geom name="left_drive_beam_geom" mesh="left_drive_beam" material="white" pos="0 0 0" euler="0 0 0"
+      class="asmagiclaw_visual"/>
+    <geom name="left_drive_beam_col" mesh="left_drive_beam" pos="0 0 0" euler="0 0 0" mass="0.005"
+      class="asmagiclaw_collision"/>
+    <inertial mass="0.014003363255390418" pos="0.03387395531977537 0.04907115574051104 5.130469299105385e-07"
+      fullinertia="7.025824691053466e-06 1.0608831938295983e-06 6.583537598077431e-06 -5.090175863220488e-07 6.499965488519052e-11 1.8655413025402012e-10"/>
+    <body name="left_finger_base" pos="0.015947461351420104 0.09118905541354089 5.485195631038664e-17"
+      euler="-3.141592653589793 8.326672683512744e-17 3.1415926535897927">
+      <joint name="left_finger_base2left_drive_beam" type="hinge"
+        axis="-4.832047791431577e-16 -1.0895637757794639e-11 1.0000000000000016"
+        pos="-0.019052538648580298 0.00031143041887939885 2.0134163951154363e-12" damping="0.01" armature="0.0001"/>
+      <geom name="left_finger_base_geom" mesh="left_finger_base" material="white" pos="0 0 0" euler="0 0 0"
+        class="asmagiclaw_visual"/>
+      <geom name="left_finger_base_col" mesh="left_finger_base" pos="0 0 0" euler="0 0 0" mass="0.005"
+        class="asmagiclaw_collision"/>
+      <inertial mass="0.03397045425553294" pos="-0.014768244701165285 0.033867908833352986 0.00014231441210591327"
+        fullinertia="1.2740795744203849e-05 1.0085344855723865e-05 1.3207890515059622e-05 3.667231097627441e-07 1.8106026522187863e-08 2.461743193597876e-08"/>
+      <body name="left_finger" pos="-0.013112878015286043 0.05057557396961812 1.7916224059888464e-16"
+        euler="-1.5707963267948968 5.998577140163191e-17 -0.24290271480330905">
+        <geom name="left_finger_geom" mesh="left_finger" material="orange" pos="0 0 0" euler="0 0 0"
+          class="asmagiclaw_visual"/>
+        <geom name="left_finger_col" mesh="left_finger" pos="0 0 0" euler="0 0 0" mass="0.005"
+          class="asmagiclaw_collision"/>
+        <inertial mass="0.027219324320069446" pos="0.0014822646923925353 -2.057055195928918e-10 0.03907747239496622"
+          fullinertia="2.2028324670781403e-05 2.1111421283705063e-05 6.713015536547005e-06 9.184564498534087e-16 -3.6970722000298835e-07 1.271911777025761e-13"/>
+        <site name="left_finger_reference" size="0.001" rgba="0 0 0 0"/>
+      </body>
+      <site name="left_loop_b" pos="0.0019474613514196529 0.028311430418879076 5.383027500123603e-13" size=".001"
+        rgba="0 0 0 0"/>
+    </body>
+  </body>
+  <body name="left_follow_beam" pos="0.003500000000000062 0.00020000000000000548 0.14228751416757998"
+    euler="1.5707963267948963 -1.9721522630525343e-31 4.2769362789406708e-16">
+    <joint name="left_follow_beam2shell" type="hinge"
+      axis="5.664715059722104e-16 -1.0895721024521483e-11 -1.0000000000000013"
+      pos="0.006999999999999864 0.010500485832417665 -1.664712834594592e-12" damping="0.01" armature="0.0001"/>
+    <geom name="left_follow_beam_geom" mesh="left_follow_beam" material="white" pos="0 0 0" euler="0 0 0"
+      class="asmagiclaw_visual"/>
+    <geom name="left_follow_beam_col" mesh="left_follow_beam" pos="0 0 0" euler="0 0 0" mass="0.005"
+      class="asmagiclaw_collision"/>
+    <inertial mass="0.011590506441377262" pos="0.007000000440635723 0.034296557052802226 6.780563977200723e-08"
+      fullinertia="4.785547996684871e-06 7.220553465049667e-07 4.192899525245085e-06 -3.185631255048924e-14 3.641569916435022e-13 -3.836265211709218e-11"/>
+    <site name="left_loop_a" pos="0.006999999999999977 0.07050048583241728 -5.382623395785357e-13" size=".001"
+      rgba="0 0 0 0"/>
+  </body>
+  <body name="right_follow_beam" pos="-0.017499999999999936 0.00019999999999998776 0.14228751416758004"
+    euler="1.5707963267948966 -1.4791141972894004e-31 4.2769362789406693e-16">
+    <joint name="right_follow_beam2shell" type="hinge"
+      axis="5.664715059722104e-16 -1.0895721024521487e-11 -1.0000000000000022"
+      pos="0.006999999999999907 0.010500485832417611 -1.6647371045883272e-12" damping="0.01" armature="0.0001"/>
+    <geom name="right_follow_beam_geom" mesh="right_follow_beam" material="white" pos="0 0 0" euler="0 0 0"
+      class="asmagiclaw_visual"/>
+    <geom name="right_follow_beam_col" mesh="right_follow_beam" pos="0 0 0" euler="0 0 0" mass="0.005"
+      class="asmagiclaw_collision"/>
+    <inertial mass="0.011590506441374522" pos="0.007000000440635729 0.03429655705279572 -6.780521100349327e-08"
+      fullinertia="4.785547996679093e-06 7.220553465046844e-07 4.192899525239669e-06 -3.1856157669191344e-14 4.516016695643116e-13 3.836276069243882e-11"/>
+    <site name="right_loop_a" pos="0.007000000000000101 0.07050048583241722 -5.38320247012722e-13" size=".001"
+      rgba="0 0 0 0"/>
+  </body>
+  <body name="right_drive_beam" pos="0.003500000000000697 0.00019999999999997965 0.0932875141675772"
+    euler="1.5707963267948968 -1.224646799147357e-16 -3.141592653589793">
+    <joint name="right_drive_beam2shell" type="hinge"
+      axis="1.9375873914463422e-16 1.0895762657884914e-11 -1.000000000000002"
+      pos="0.03500000000000077 0.031500485832420565 1.3596635455904788e-12" damping="0.01" armature="0.0001"/>
+    <geom name="right_drive_beam_geom" mesh="right_drive_beam" material="white" pos="0 0 0" euler="0 0 0"
+      class="asmagiclaw_visual"/>
+    <geom name="right_drive_beam_col" mesh="right_drive_beam" pos="0 0 0" euler="0 0 0" mass="0.005"
+      class="asmagiclaw_collision"/>
+    <inertial mass="0.014004292741543852" pos="0.033873399433910156 0.049069588240351084 1.2756851693589995e-07"
+      fullinertia="7.0264055934418035e-06 1.0609868617740252e-06 6.584185944310467e-06 -5.091960182818761e-07 1.4736566330318435e-11 4.732497386695849e-11"/>
+    <body name="right_finger_base" pos="0.015947461351419914 0.09118905541354093 -2.0435042547006786e-17"
+      euler="3.141592653589793 -5.3027099789392925e-27 -3.1415926535897927">
+      <joint name="right_finger_base2right_drive_beam" type="hinge"
+        axis="1.9375873915495336e-16 -1.0895554491067799e-11 -1.000000000000002"
+        pos="-0.01905253864858084 0.000311430418879276 -2.013434379970843e-12" damping="0.01" armature="0.0001"/>
+      <geom name="right_finger_base_geom" mesh="right_finger_base" material="white" pos="0 0 0" euler="0 0 0"
+        class="asmagiclaw_visual"/>
+      <geom name="right_finger_base_col" mesh="right_finger_base" pos="0 0 0" euler="0 0 0" mass="0.005"
+        class="asmagiclaw_collision"/>
+      <inertial mass="0.03397045311273849" pos="-0.014768245194426653 0.03386790917294118 -0.00014229485206273762"
+        fullinertia="1.274079561838516e-05 1.0085344728066787e-05 1.320789000359168e-05 3.6672298476992417e-07 -1.811877512800815e-08 -2.462321274448843e-08"/>
+      <body name="right_finger" pos="-0.013112876976025074 0.050575578034017854 6.776712400645424e-09"
+        euler="1.5707974266846267 3.141592653589793 2.8986899383828715">
+        <geom name="right_finger_geom" mesh="right_finger" material="orange" pos="0 0 0" euler="0 0 0"
+          class="asmagiclaw_visual"/>
+        <geom name="right_finger_col" mesh="right_finger" pos="0 0 0" euler="0 0 0" mass="0.005"
+          class="asmagiclaw_collision"/>
+        <inertial mass="0.027219324320069446" pos="0.0014822646923925353 -2.057055195928918e-10 0.03907747239496622"
+          fullinertia="2.2028324670781403e-05 2.1111421283705063e-05 6.713015536547005e-06 9.184564498534087e-16 -3.6970722000298835e-07 1.271911777025761e-13"/>
+        <site name="right_finger_reference" size="0.001" rgba="0 0 0 0"/>
+      </body>
+      <site name="right_loop_b" pos="0.0019474613514193452 0.02831143041887922 -5.383637785937663e-13" size=".001"
+        rgba="0 0 0 0"/>
+    </body>
+  </body>
+  <body name="top_nameplate" pos="-1.4310418942556832e-09 -0.15033685236712863 -0.039694250929835195"
+    euler="-1.570796326309887 -1.5679022765616433 1.5707963263046463">
+    <geom name="top_nameplate_geom" mesh="top_nameplate" material="black" pos="0 0 0" euler="0 0 0"
+      class="asmagiclaw_visual"/>
+    <geom name="top_nameplate_col" mesh="top_nameplate" pos="0 0 0" euler="0 0 0" mass="0.005"
+      class="asmagiclaw_collision"/>
+    <inertial mass="0.0024254217540438895" pos="0.16470253714521368 0.17686362975821612 9.887355236048977e-07"
+      fullinertia="6.613557872233994e-08 5.212300036831091e-07 4.6717021926218806e-07 4.496062349331054e-08 6.402026253648896e-13 -4.929594111996802e-13"/>
+  </body>
+  <body name="bottom_nameplate" pos="-3.31999476792859e-07 0.14963038215091964 -0.039941496455822775"
+    euler="-1.5707963262436224 -1.5679925997253823 -1.570796327351661">
+    <geom name="bottom_nameplate_geom" mesh="bottom_nameplate" material="black" pos="0 0 0" euler="0 0 0"
+      class="asmagiclaw_visual"/>
+    <geom name="bottom_nameplate_col" mesh="bottom_nameplate" pos="0 0 0" euler="0 0 0" mass="0.005"
+      class="asmagiclaw_collision"/>
+    <inertial mass="0.0024254217540438895" pos="0.16470253714521368 0.17686362975821612 9.887355236048977e-07"
+      fullinertia="6.613557872233994e-08 5.212300036831091e-07 4.6717021926218806e-07 4.496062349331054e-08 6.402026253648896e-13 -4.929594111996802e-13"/>
+  </body>
+  <site name="grasp_reference" pos="0 0 .3" quat=".5 -.5 -.5 -.5" size=".001" rgba="0 0 0 0" group="5"/>
+</mujocoinclude>

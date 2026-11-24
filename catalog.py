@@ -111,6 +111,7 @@ MODEL_MAP = {
   'asoverdog/asoverdog_planar': ModelType.QUADRUPED,
   'asoverdog/asoverdog_spherical': ModelType.QUADRUPED,
   'asmagiclaw/asmagiclaw': ModelType.END_EFFECTOR,
+  'asmagiclaw/asmagiclaw_handheld': ModelType.END_EFFECTOR,
   'shadow_dexee/shadow_dexee': ModelType.END_EFFECTOR,
   'pal_talos/talos': ModelType.HUMANOID,
   'leap_hand/left_hand': ModelType.END_EFFECTOR,
@@ -157,6 +158,7 @@ MODEL_MAP = {
 # file doesn't exist or wraps the wrong model (e.g., panda/scene.xml loads
 # the full arm; for the standalone gripper we want hand.xml directly).
 PREVIEW_OVERRIDES = {
+  'asmagiclaw/asmagiclaw_handheld': 'asmagiclaw/scene_handheld.xml',
   'asoverdog/asoverdog_planar': 'asoverdog/scene_planar.xml',
   'asoverdog/asoverdog_spherical': 'asoverdog/scene_spherical.xml',
   'franka_emika_panda/hand': 'franka_emika_panda/hand.xml',

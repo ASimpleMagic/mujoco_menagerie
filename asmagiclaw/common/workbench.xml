@@ -1,4 +1,7 @@
 <mujocoinclude>
+  <custom>
+    <numeric name="filament.clear_color" data="0.48 0.55 0.63 1"/>
+  </custom>
   <visual>
     <global azimuth="125" elevation="-24"/>
     <headlight diffuse="0.65 0.65 0.65" ambient="0.35 0.35 0.35" specular="0.15 0.15 0.15"/>
@@ -10,6 +13,5 @@
   </asset>
   <worldbody>
     <light name="workbench_key" pos="0.25 -0.35 0.65" dir="-0.15 0.25 -1" directional="true"/>
-    <geom name="floor" type="plane" pos="0 0 -0.10" size="0 0 0.03" material="workbench_floor"/>
   </worldbody>
 </mujocoinclude>

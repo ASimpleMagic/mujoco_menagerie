@@ -1,0 +1,51 @@
+<mujocoinclude>
+  <default>
+    <default class="asmagiclaw_visual">
+      <geom type="mesh" group="1" contype="0" conaffinity="0" condim="3"/>
+    </default>
+    <default class="asmagiclaw_collision">
+      <geom type="mesh" group="4" contype="1" conaffinity="2" friction="0.8 0 0" solref="0.002 1" condim="3"
+        rgba="0.5 0.7 0.9 0.2"/>
+    </default>
+  </default>
+  <asset>
+    <mesh name="shell" file="shell.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="left_drive_beam" file="left_drive_beam.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="left_follow_beam" file="left_follow_beam.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="left_finger_base" file="left_finger_base.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="left_finger" file="left_finger_surf.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="right_drive_beam" file="right_drive_beam.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="right_follow_beam" file="right_follow_beam.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="right_finger_base" file="right_finger_base.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="right_finger" file="right_finger_surf.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="top_nameplate" file="top_nameplate.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="bottom_nameplate" file="bottom_nameplate.stl" scale="0.001 0.001 0.001"/>
+    <material name="black" rgba="0.1 0.1 0.1 1" shininess="0.5"/>
+    <material name="white" rgba="1 1 1 1" shininess="0.2"/>
+    <material name="orange" rgba="1 0.2 0 1" shininess="0.2"/>
+  </asset>
+  <contact>
+    <exclude body1="left_follow_beam" body2="left_finger_base"/>
+    <exclude body1="right_follow_beam" body2="right_finger_base"/>
+    <exclude body1="left_follow_beam" body2="shell"/>
+    <exclude body1="right_follow_beam" body2="shell"/>
+    <exclude body1="left_drive_beam" body2="left_finger_base"/>
+    <exclude body1="right_drive_beam" body2="right_finger_base"/>
+    <exclude body1="left_drive_beam" body2="shell"/>
+    <exclude body1="right_drive_beam" body2="shell"/>
+    <exclude body1="left_finger_base" body2="left_finger"/>
+    <exclude body1="right_finger_base" body2="right_finger"/>
+  </contact>
+  <equality>
+    <joint name="drive_beams" joint1="left_drive_beam2shell" joint2="right_drive_beam2shell" polycoef="0 1 0 0 0"
+      solref=".002 1" solimp=".9999 .99999 .001 .5 2"/>
+    <connect name="left_closure" site1="left_loop_a" site2="left_loop_b" solref=".002 1"
+      solimp=".9999 .99999 .001 .5 2"/>
+    <connect name="right_closure" site1="right_loop_a" site2="right_loop_b" solref=".002 1"
+      solimp=".9999 .99999 .001 .5 2"/>
+  </equality>
+  <actuator>
+    <position name="claw_beam" joint="left_drive_beam2shell" ctrlrange="-0.02 1.1" ctrllimited="true" kp="60" kv="1"
+      forcelimited="true" forcerange="-3 3"/>
+  </actuator>
+</mujocoinclude>

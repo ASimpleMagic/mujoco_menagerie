@@ -57,6 +57,7 @@ CAMERA_MAP = {}
 # pylint: disable=line-too-long
 KEYFRAME_MAP = {
   'asmagiclaw/asmagiclaw': '0.75 -0.75 0.75 -0.75 0.75 0.75',
+  'asmagiclaw/asmagiclaw_handheld': '0.75 -0.75 0.75 -0.75 0.75 0.75',
   'pal_talos/talos': (
     '0 0 1.025 0 0 0 0 0 0.15 0 0 0.3 0.4 -0.5 -1.5 0 0 0 0 -0.4 0 0 0 0 0'
     ' -0.3 -0.4 0.5 -1.5 0 0 0 0 -0.4 0 0 0 0 0 0 0 -0.4 0.8 -0.4 0 0 0'
@@ -107,12 +108,15 @@ LIVE_MODEL_REFS = {
 # Count independent coordinates for closed-chain mechanisms.
 DOF_OVERRIDES = {
   'asmagiclaw/asmagiclaw': 1,
+  'asmagiclaw/asmagiclaw_handheld': 1,
   'asoverdog/asoverdog_bennett': 12,
   'asoverdog/asoverdog_planar': 12,
   'asoverdog/asoverdog_spherical': 12,
 }
 
 GALLERY_NAMES = {
+  'asmagiclaw/asmagiclaw': 'asMagiClaw Gripper',
+  'asmagiclaw/asmagiclaw_handheld': 'asMagiClaw Handheld',
   'asoverdog/asoverdog_bennett': 'asOverDog Bennett',
   'asoverdog/asoverdog_planar': 'asOverDog Planar',
   'asoverdog/asoverdog_spherical': 'asOverDog Spherical',
@@ -128,6 +132,7 @@ STUDIO_SAMPLES = {
 
 STUDIO_PROJECT_ZIPS = {
   'asmagiclaw/asmagiclaw': 'assets/asmagiclaw-studio.zip',
+  'asmagiclaw/asmagiclaw_handheld': 'assets/asmagiclaw-studio.zip',
 }
 
 
@@ -152,6 +157,7 @@ AUTO_PADDING = 1.08
 # quat), so we view them from ~20–-30° (front-right of +X).
 # Per-robot view angle override, falling back to VIEW_ANGLES[category].
 VIEW_ANGLE_OVERRIDE = {
+  'asmagiclaw/asmagiclaw_handheld': (125, 20),
   # Default biomechanical angle catches MS-Human-700 from the side; nudge
   # to a near-frontal 3/4.
   'ms_human_700/MS-Human-700': (20, 15),

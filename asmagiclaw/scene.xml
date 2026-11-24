@@ -5,6 +5,9 @@
     <flag multiccd="enable"/>
   </option>
   <include file="common/workbench.xml"/>
+  <worldbody>
+    <geom name="floor" type="plane" pos="0 0 -0.10" size="0 0 0.03" material="workbench_floor"/>
+  </worldbody>
   <keyframe>
     <key name="home" ctrl="0"/>
     <key name="open" qpos="1.1 -1.1 1.1 -1.1 1.1 1.1" ctrl="1.1"/>
