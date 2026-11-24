@@ -124,6 +124,7 @@ GALLERY_NAMES = {
 
 STUDIO_SAMPLES = {
   'asmagiclaw/asmagiclaw': 'asmagiclaw',
+  'asmagiclaw/asmagiclaw_handheld': 'asmagiclaw-handheld',
   'asroballet/asRoBallet_floating_ball': 'asroballet',
   'asoverdog/asoverdog_bennett': 'asoverdog-bennett',
   'asoverdog/asoverdog_planar': 'asoverdog-planar',
