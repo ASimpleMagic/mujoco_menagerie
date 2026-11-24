@@ -2,7 +2,8 @@
 
 asMagiClaw is a motor-driven two-finger gripper developed by the Design and
 Learning Research Group. The two configurations share the same four-bar
-linkage and rigid fingertip contact model.
+linkage, rigid fingertip contact model, and iPhone 12 Pro assembly with a cold
+shoe, phone holder, and rear camera.
 [MagiClaw project and paper](https://arxiv.org/abs/2509.19169)
 
 | Configuration | Workbench scene | Reusable model |
@@ -13,15 +14,16 @@ linkage and rigid fingertip contact model.
 
 ## First-person view
 
-Open the [handheld project in Studio](https://asimplemagic.com/?sample=asmagiclaw-handheld).
-In the simulator, choose `iphone_12_pro_rear` under **Rendering → Camera**.
-Choose **Free: tumble** to return to the orbit view. With the viewport focused,
-`]` cycles through the camera options. The camera is fixed to the published
-rear lens frame and faces the fingers in landscape orientation.
+The [Handheld link](https://asimplemagic.com/?sample=asmagiclaw-handheld) opens
+`scene_handheld_umi.xml` directly. Under **Rendering → Camera**, choose
+`gripper_iphone_12_pro_rear`. In the [Gripper workbench](https://asimplemagic.com/?sample=asmagiclaw)
+and the fixed handheld scene, choose `iphone_12_pro_rear`. Choose **Free: tumble**
+to return to orbit. With the viewport focused, `]` cycles through the camera
+options. The camera is fixed to the published rear lens frame and faces the
+fingers in landscape orientation.
 
-For the UMI-style workbench, select `scene_handheld_umi.xml` under **Entry model**
-and choose **Apply**. Select `gripper_iphone_12_pro_rear` in the same camera menu.
-Press **Run** and open **Inspector → Controls**. Use `handheld_x`, `handheld_y`, and `handheld_z`
+In the UMI-style workbench, press **Run** and open **Inspector → Controls**.
+Use `handheld_x`, `handheld_y`, and `handheld_z`
 for translation, and `handheld_roll`, `handheld_pitch`, and `handheld_yaw`
 for rotation. Use `gripper_claw_beam` to move the fingers. Like the Menagerie
 UMI scene, the gripper and its camera move together through six pose axes.
@@ -51,7 +53,7 @@ Six hinge coordinates describe the linkages. A joint equality synchronizes the
 two driven beams, and two point equalities close the follower loops. The
 mechanism has one independent motion. The position actuator is bounded to
 ±3 N·m. The printed parts use CAD-derived PLA mass and inertia estimates. The
-handheld mount uses the published CAD transforms. The phone has the original
+shared mount uses the published CAD transforms. The phone has the original
 reference mesh, a 189 g mass, and box inertia from Apple's handset dimensions.
 Bracket inertias use the source CAD estimates. The contact model treats the
 MetaFinger surfaces as rigid. [iPhone 12 Pro specifications](https://support.apple.com/en-us/111875)

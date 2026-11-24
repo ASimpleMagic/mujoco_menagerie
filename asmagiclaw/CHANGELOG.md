@@ -2,6 +2,9 @@
 
 ## 2026-11-25
 
+- Shared the iPhone 12 Pro, mount, and rear camera with the flange-mounted
+  gripper. The Handheld link opens the six-axis workbench in Studio.
+
 - Added the handheld workbench with the original handle, trigger, cold shoe,
   holder, and iPhone 12 Pro reference mesh.
 - Shared the gripper linkage between both variants and verified opening,

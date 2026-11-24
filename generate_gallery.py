@@ -158,6 +158,7 @@ AUTO_PADDING = 1.08
 # quat), so we view them from ~20–-30° (front-right of +X).
 # Per-robot view angle override, falling back to VIEW_ANGLES[category].
 VIEW_ANGLE_OVERRIDE = {
+  'asmagiclaw/asmagiclaw': (-50, 18),
   'asmagiclaw/asmagiclaw_handheld': (-50, 18),
   # Default biomechanical angle catches MS-Human-700 from the side; nudge
   # to a near-frontal 3/4.

@@ -23,6 +23,12 @@
     <material name="black" rgba="0.1 0.1 0.1 1" shininess="0.5"/>
     <material name="white" rgba="1 1 1 1" shininess="0.2"/>
     <material name="orange" rgba="1 0.2 0 1" shininess="0.2"/>
+    <mesh name="cold_shoe" file="cold_shoe.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="phone_holder" file="phone_holder.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="phone" file="phone.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="fusion_camera" file="fusion_camera.stl" scale="0.001 0.001 0.001"/>
+    <material name="phone_lens_rim" rgba="0.64 0.66 0.7 1" specular="0.45" shininess="0.6"/>
+    <material name="phone_lens_glass" rgba="0.105 0.16 0.21 1" specular="0.85" shininess="0.9"/>
   </asset>
   <contact>
     <exclude body1="left_follow_beam" body2="left_finger_base"/>
