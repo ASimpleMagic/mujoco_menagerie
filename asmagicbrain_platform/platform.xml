@@ -1,0 +1,84 @@
+<mujocoinclude>
+  <custom>
+    <numeric name="filament.clear_color" data="0.48 0.55 0.63 1"/>
+  </custom>
+  <asset>
+    <texture name="studio_checker" type="2d" builtin="checker" width="256" height="256" rgb1="0.25 0.32 0.36"
+      rgb2="0.30 0.37 0.41"/>
+    <material name="studio_floor" texture="studio_checker" texrepeat="4 4" texuniform="true"/>
+    <texture name="platform_grid" type="2d" file="assets/platform/optical-grid.png"/>
+    <material name="platform_optical_plate" texture="platform_grid" texrepeat="20 22" specular="0.16" shininess="0.25"/>
+    <material name="platform_screen" rgba="0.035 0.074 0.115 1" emission="0.12" specular="0.12"/>
+  </asset>
+  <worldbody>
+    <geom name="floor" type="plane" pos="0 0 -0.031" size="0 0 0.1" material="studio_floor"/>
+    <body name="asMagicBrain_platform">
+      <geom name="optical_plate" type="box" pos="0 0 -0.0025" size="0.25 0.27 0.0025"
+        material="platform_optical_plate"/>
+      <geom name="vertical_mounting_plate" type="box" pos="0 0.13 0.245" size="0.225 0.0025 0.245"
+        rgba="0.65 0.70 0.73 1"/>
+      <geom name="left_side_plate" type="box" pos="-0.2275 0.19 0.245" size="0.0025 0.0575 0.245"
+        rgba="0.65 0.70 0.73 1"/>
+      <geom name="right_side_plate" type="box" pos="0.2275 0.19 0.245" size="0.0025 0.0575 0.245"
+        rgba="0.65 0.70 0.73 1"/>
+      <geom name="asBrain_box" type="box" pos="0.136 0.19925 0.105" size="0.078 0.05225 0.105" rgba="0.12 0.15 0.18 1"/>
+      <geom name="asBrain_vent_0" type="box" pos="0.1345 0.25175 0.151" size="0.0585 0.00025 0.001" contype="0"
+        conaffinity="0" rgba="0.29 0.34 0.38 1"/>
+      <geom name="asBrain_vent_1" type="box" pos="0.1345 0.25175 0.158" size="0.0585 0.00025 0.001" contype="0"
+        conaffinity="0" rgba="0.29 0.34 0.38 1"/>
+      <geom name="asBrain_vent_2" type="box" pos="0.1345 0.25175 0.165" size="0.0585 0.00025 0.001" contype="0"
+        conaffinity="0" rgba="0.29 0.34 0.38 1"/>
+      <geom name="asBrain_vent_3" type="box" pos="0.1345 0.25175 0.172" size="0.0585 0.00025 0.001" contype="0"
+        conaffinity="0" rgba="0.29 0.34 0.38 1"/>
+      <geom name="asBrain_vent_4" type="box" pos="0.1345 0.25175 0.179" size="0.0585 0.00025 0.001" contype="0"
+        conaffinity="0" rgba="0.29 0.34 0.38 1"/>
+      <geom name="asBrain_vent_5" type="box" pos="0.1345 0.25175 0.186" size="0.0585 0.00025 0.001" contype="0"
+        conaffinity="0" rgba="0.29 0.34 0.38 1"/>
+      <geom name="left_handle_leg_1" type="capsule" fromto="-0.251 0 -0.009 -0.287 0 -0.009" size="0.009"
+        rgba="0.65 0.70 0.73 1"/>
+      <geom name="left_handle_leg_2" type="capsule" fromto="-0.251 0.15 -0.009 -0.287 0.15 -0.009" size="0.009"
+        rgba="0.65 0.70 0.73 1"/>
+      <geom name="left_handle_grip" type="capsule" fromto="-0.287 0 -0.009 -0.287 0.15 -0.009" size="0.009"
+        rgba="0.65 0.70 0.73 1"/>
+      <geom name="left_rear_rail" type="box" pos="-0.15 0.39 0.005" size="0.012 0.2 0.01" rgba="0.16 0.55 0.59 1"/>
+      <geom name="left_laptop_retainer" type="box" pos="-0.15 0.81 0.03" size="0.012 0.012 0.015"
+        rgba="0.16 0.55 0.59 1"/>
+      <geom name="right_handle_leg_1" type="capsule" fromto="0.251 0 -0.009 0.287 0 -0.009" size="0.009"
+        rgba="0.65 0.70 0.73 1"/>
+      <geom name="right_handle_leg_2" type="capsule" fromto="0.251 0.15 -0.009 0.287 0.15 -0.009" size="0.009"
+        rgba="0.65 0.70 0.73 1"/>
+      <geom name="right_handle_grip" type="capsule" fromto="0.287 0 -0.009 0.287 0.15 -0.009" size="0.009"
+        rgba="0.65 0.70 0.73 1"/>
+      <geom name="right_rear_rail" type="box" pos="0.15 0.39 0.005" size="0.012 0.2 0.01" rgba="0.16 0.55 0.59 1"/>
+      <geom name="right_laptop_retainer" type="box" pos="0.15 0.81 0.03" size="0.012 0.012 0.015"
+        rgba="0.16 0.55 0.59 1"/>
+      <geom name="front_handle_leg_1" type="capsule" fromto="-0.073 -0.27 -0.001 -0.073 -0.308 -0.001" size="0.009"
+        rgba="0.65 0.70 0.73 1"/>
+      <geom name="front_handle_leg_2" type="capsule" fromto="0.08 -0.27 -0.001 0.08 -0.308 -0.001" size="0.009"
+        rgba="0.65 0.70 0.73 1"/>
+      <geom name="front_handle_grip" type="capsule" fromto="-0.073 -0.308 -0.001 0.08 -0.308 -0.001" size="0.009"
+        rgba="0.65 0.70 0.73 1"/>
+      <geom name="laptop_tray" type="box" pos="0 0.55 0.015" size="0.19 0.275 0.005" rgba="0.16 0.55 0.59 1"/>
+      <body name="rear_laptop" pos="0 0.304 0.022">
+        <geom name="laptop_base" type="box" pos="0 0.123 0.006" size="0.161 0.123 0.006" rgba="0.36 0.40 0.44 1"/>
+        <geom name="laptop_keyboard" type="box" pos="0 0.1475 0.013" size="0.139 0.0735 0.001" contype="0"
+          conaffinity="0" rgba="0.12 0.15 0.18 1"/>
+        <body name="laptop_lid" pos="0 0.242 0.012" euler="0.87 0 0">
+          <geom name="laptop_display_shell" type="box" pos="0 0.128 0" size="0.161 0.128 0.004"
+            rgba="0.36 0.40 0.44 1"/>
+          <geom name="laptop_display_panel" type="box" pos="0 0.1285 0.0045" size="0.148 0.1155 0.0005"
+            material="platform_screen" contype="0" conaffinity="0"/>
+        </body>
+      </body>
+      <site name="ref_P" pos="0 0 0" size="0.004" rgba="0.21 0.66 0.74 0.85" group="4"/>
+      <site name="ref_D_L" pos="-0.15 -0.08 0" size="0.004" rgba="0.21 0.66 0.74 0.85" group="4"/>
+      <site name="ref_D_C" pos="0 -0.08 0" size="0.004" rgba="0.21 0.66 0.74 0.85" group="4"/>
+      <site name="ref_D_R" pos="0.15 -0.08 0" size="0.004" rgba="0.21 0.66 0.74 0.85" group="4"/>
+      <site name="ref_V_L" pos="-0.11 0.1275 0.245" size="0.004" rgba="0.21 0.66 0.74 0.85" group="4"/>
+      <site name="ref_V_C" pos="0 0.1275 0.245" size="0.004" rgba="0.21 0.66 0.74 0.85" group="4"/>
+      <site name="ref_V_R" pos="0.11 0.1275 0.245" size="0.004" rgba="0.21 0.66 0.74 0.85" group="4"/>
+      <site name="ref_REAR" pos="0 0.55 0.02" size="0.004" rgba="0.21 0.66 0.74 0.85" group="4"/>
+      <site name="arm_base_reference" pos="0 -0.17 0.012" size="0.004" rgba="0.21 0.66 0.74 0.85" group="4"/>
+    </body>
+  </worldbody>
+</mujocoinclude>
